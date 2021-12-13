@@ -1,0 +1,25 @@
+.main_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+
+.wrap_shipping {
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    margin: 50px 20px 20px 20px;
+    padding: 25px 25px;
+    text-align: center;   
+}
+
+.wrap_order .shipping {
+    font-size: 30px;
+}
+.wrap_order h4 {
+ 
+}
+
+.wrap_order p {
+    font-size: 12px;
+    color: #a1a1a1;
+    padding: 4px 0px;
+}
