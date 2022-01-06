@@ -8,9 +8,10 @@
     padding: 16px 0px 5px 0px;
     position: fixed;
     width: 100%;
-    z-index: 200;
-  
+    z-index: 200;    
+    height: 60px;  
 }
+
 .wrapped {
     display: flex;
     justify-content: space-between;
@@ -33,7 +34,7 @@
     font-weight: 500;
 }
 .un_orderlist li :hover {
-  color: #fa854c;
+  color: var(--them_color);
 }
 
 .un_orderlist1 {
@@ -48,9 +49,37 @@
 .Fi_phone {
     font-size: 30px;
 }
+.flex_2 {
+    margin-top: -14px;
+    position: relative;
+}
+.search_flex {
+    margin-top: 10px;
+    position: relative;
+    margin-left: 80px;
+}
+.search_flex .search_header input  {
+    padding: 8px 8px;
+    /* border: 1px solid white; */
+    background: none;
+    outline: none;
+    width: 690px;
+    margin: 0px 35px;
+}
+.search_flex .search_header button {
+    position: absolute;
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    right: 37px;
+    background-color: var(--them_color);
+    top: 2px;
+}
+
 .flex_3 {
     display: flex;
 }
+
 .Home_line {
     padding-right: 10px;
     margin: 0px 50px 0px 5px;
@@ -87,7 +116,43 @@
     padding-left: 3px;
 
 }
+.EG_shops input  {
+    padding: 8px 8px;
+    border: 1px solid white;
+    background: none;
+    outline: none;
+    width: 400px;
+    color: white;
+    margin: 0px 35px;
+}
 
+.EG_shops button {
+    position: absolute;
+    padding: 9px 16px;
+    outline: none;
+    border: none;
+    right: 35px;
+    background-color:  var(--them_color);
+}
 
+.About_navbar {
+    background-color: #ffffff;
+    padding: 16px 0px 5px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 200;    
+    height: 60px;  
+}   
+.About_navbar .flex_3 {
+    margin-top: 7px;
+}
+.About_navbar .Fi_phone {
+    font-size: 24px;
+    margin-top: -4px;
+}
 
+.About_navbar .Home_line {
+    padding-right: 10px;
+    margin: -6px 50px 0px 5px;
+}
 

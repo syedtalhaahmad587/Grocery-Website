@@ -15,8 +15,8 @@ const breakPoints = [
   { width: 1200, itemsToShow: 4 }
 ];
 
-const Modal = () => {
-   const [items , setitem] = useState(Item)
+const Modal = () => { 
+   const [items , setitem] = useState(Item); 
     return (
         <>
           <div className="food_zone">
@@ -39,11 +39,11 @@ const Modal = () => {
              <div><span>{icon}</span></div>
              </div>
         </div>
-        
             </>
           )
         } )}
-        
+       
+      
          <div><p><AiOutlineArrowDown /></p></div>
 
       </Carousel>
@@ -51,14 +51,6 @@ const Modal = () => {
         </>
     )
 }
-// {items.map((elem) => {
-//   const {id , image } = elem;
-//   return (
-//     <>
-      
-//     </>
-//   ) 
-// })}
 
 export default Modal;
 

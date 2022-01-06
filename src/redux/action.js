@@ -3,17 +3,16 @@ const getData = (data) => ({
     payload: data
 })
 
-const isNumberInc = (item , id ) => ({
-  type: "INC",
-  payload : item,
-  id : id,
+// const isNumberInc = (item , id ) => ({
+//   type: "INC",
+//   payload : item,
  
-})
+// })
 
 const isNumberDec = (item , id ) => ({
-  type: "DEC",
+  type: "DEl",
   payload :  item,
   id : id
 })
     
-export { getData , isNumberInc , isNumberDec };
+export { getData , isNumberDec };

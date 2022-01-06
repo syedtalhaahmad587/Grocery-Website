@@ -2,14 +2,87 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px 0px; 
-    margin: 30px 0px;   
+    margin: 30px 0px;  
+        padding: 30px 20px; 
+        color: white;
 }
 
-.backGround {
-    background-image: url("../../../assets/DairyEggs.jpg");
+.backGround_1 {
+    background-image: url("../../../assets/eggdairy.jpg");
       width: 400px;
       height: 200px;
       position: 100% 100%;
       background-size: 100% 100%;
       margin: auto;
+      padding: 20px 20px;
+  }
+  .backGround_1 p {
+      width: 250px;
+  }
+  .backGround_1 button {
+    padding: 9px 20px;
+    border-radius: 25px;
+    border: 1px solid white;
+    margin-top: 12px;
+    color: white;
+    background: transparent;
+    
+  }
+  .backGround_1 button:hover {
+    color: black;
+    background: white;
+    transition: 0.5s ease;
+  }
+
+  .backGround_2 {
+    background-image: url("../../../assets/basketimage.jpg");
+      width: 400px;
+      height: 200px;
+      position: 100% 100%;
+      background-size: 100% 100%;
+      margin: auto;
+      padding: 20px 20px;
+  }
+  .backGround_2 p {
+      width: 250px;
+  }
+  .backGround_2 button {
+    padding: 9px 20px;
+    border-radius: 25px;
+    border: 1px solid white;
+    margin-top: 12px;
+    color: white;
+    background: transparent;
+    
+  }
+  .backGround_2 button:hover {
+    color: black;
+    background: white;
+    transition: 0.5s ease;
+  }
+  .backGround_3 {
+    background-image: url("../../../assets/newvegetable.jpg");
+      width: 400px;
+      height: 200px;
+      position: 100% 100%;
+      background-size: 100% 100%;
+      margin: auto;
+      padding: 20px 20px;
+  }
+  .backGround_3 p {
+      width: 250px;
+  }
+  .backGround_3 button {
+    padding: 9px 20px;
+    border-radius: 25px;
+    border: 1px solid white;
+    margin-top: 12px;
+    color: white;
+    background: transparent;
+    
+  }
+  .backGround_3 button:hover {
+    color: black;
+    background: white;
+    transition: 0.5s ease;
   }

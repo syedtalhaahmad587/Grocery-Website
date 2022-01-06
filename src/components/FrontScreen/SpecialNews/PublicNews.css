@@ -14,24 +14,25 @@
 .wrap img {
     width: 450px;
     height: 250px;
+    margin-bottom: -4px;
 
 }
 .succes_store {
    background-color: #00142c;
 }
-.succes_store_grocery {
+.succes_store_grocerys {
     color: white;
     padding: 20px 14px;
 }
-.succes_store_grocery h4  {
+.succes_store_grocerys h4  {
     font-family: sans-serif;
 }
-.succes_store_grocery .pera p {
+.succes_store_grocerys .pera p {
    font-size: 12px;
    padding: 10px 0px;
    
 }
-.succes_store_grocery button  {
+.succes_store_grocerys button  {
     padding: 10px 16px;
     border-radius: 50px;
     cursor: pointer;
@@ -66,4 +67,7 @@
     
     color: #a1a1a1;
 
+}
+.pera {
+    margin-bottom: 12px;
 }

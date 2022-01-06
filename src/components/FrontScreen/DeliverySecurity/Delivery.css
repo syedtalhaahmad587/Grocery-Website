@@ -7,7 +7,9 @@
 .wrap_shipping {
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
     margin: 50px 20px 20px 20px;
-    padding: 25px 25px;
+    width: 200px;
+    height: 112px;
+    padding: 12px 0px;
     text-align: center;   
 }
 
@@ -22,4 +24,10 @@
     font-size: 12px;
     color: #a1a1a1;
     padding: 4px 0px;
+}
+
+.delivery_authoritizes {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
