@@ -1,0 +1,86 @@
+.inl-blog {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.inl-blog img  {
+    width: 100%;
+    height: auto;
+    background: no-repeat;
+    height: 476px;
+}
+
+.lyt-view-blog-text {
+    transition: .3s ease;
+    padding: 25px;
+    background-color: #fafafa;  
+    color: black;
+}
+.lyt-view-blog-text:hover {
+    background-color: #00152b;
+    color: white;
+}
+/* .lyt-view-blog-text h4 {
+    color: black;
+}
+.lyt-view-blog-text p {
+    color: black;
+        font-size: 1rem;
+    font-weight: 400;
+    font-family: work sans,sans-serif;
+    color: #848484;
+    line-height: 1.7;
+}
+.lyt-view-blog-text button {
+    color: black;
+}
+.lyt-view-blog-text span {
+    color: black;
+} */
+.lyt-view-blog-text p {
+    color: black;
+        font-size: 1rem;
+    font-weight: 400;
+    font-family: work sans,sans-serif;
+    color: #848484;
+    line-height: 1.7;
+}
+.lyt-view-blog-text button {
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: manrope,sans-serif;
+    line-height: 1.2;
+    border-radius: 25px;
+    background: #00152b;
+    color: white;
+    border: 1px solid;
+}
+.lyt-view-blog-text button:hover {
+   background: white;
+   border: 1px solid #00152b ;
+   color: black;
+   outline: none;
+}
+.blog-content-pera {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-data {
+    position: relative;
+}
+.blog-data {
+    position: relative;
+}
+.blog-data .svg-content svg  {
+    margin-right: 4px;
+    position: absolute;    
+    margin-left: -24px;
+    margin-top: 2px;
+
+}
+
+.blog-mn-standard {
+    margin-top: 2.4rem;
+}
+

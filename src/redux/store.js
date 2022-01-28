@@ -1,8 +1,12 @@
-import { createStore } from "redux";
-import reducer from "./cardRedux";
-// import { applyMiddleware } from "redux";
-// import thunk from "redux-thunk";
+import { createStore , applyMiddleware  } from "redux";
+import thunk from "redux-thunk";
+import rootReducer from "./rootReducer";
+import logger from "redux-logger";
 
-const store = createStore(reducer);
+const middleware = [thunk];
 
-export default store;
+if(process.env.NODE_ENV === "development" ) {
+    middleware.push(logger);
+}
+
+export const store = createStore(rootReducer,  applyMiddleware(...middleware));

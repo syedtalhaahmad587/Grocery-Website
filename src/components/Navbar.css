@@ -4,22 +4,26 @@
     box-sizing: border-box;
 }
 .main_navbar {
-    background-color: #ffffff;
+    background: #ffffff;
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
     padding: 16px 0px 5px 0px;
     position: fixed;
     width: 100%;
     z-index: 200;    
     height: 60px;  
+    
 }
 
 .wrapped {
     display: flex;
     justify-content: space-between;
+    padding: 0px 35px 0px 35px;
+
 }
 
 .un_orderlist {
     display: flex;
-    margin: 0px 0px 0px 50px;
+    /* margin: 0px 0px 0px 50px; */
 }
 
 .un_orderlist li {
@@ -31,7 +35,14 @@
     border: none;
     color: #616e7b;
     background-color: #ffffff;
+    /* font-weight: 500; */
+    font-size: 1rem;
+    color: #00152b;
+    font-family: work sans,sans-serif;
     font-weight: 500;
+    position: relative;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
 }
 .un_orderlist li :hover {
   color: var(--them_color);
@@ -63,7 +74,7 @@
     /* border: 1px solid white; */
     background: none;
     outline: none;
-    width: 690px;
+    width: 650px;
     margin: 0px 35px;
 }
 .search_flex .search_header button {
@@ -73,7 +84,7 @@
     border: none;
     right: 37px;
     background-color: var(--them_color);
-    top: 2px;
+    top: 1px;
 }
 
 .flex_3 {
@@ -81,17 +92,21 @@
 }
 
 .Home_line {
-    padding-right: 10px;
-    margin: 0px 50px 0px 5px;
+ padding-left: 8px;
 }
 .Home_line h4 {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 500;
     margin-bottom: -3px;
-    color: #f3f3f3;
+    color: #adadad;;
 }
 
 .Home_line p {
-    color: #505e6d
+    font-size: 14px;
+    font-weight: 700;
+    color: #264653;
+    font-family: manrope,sans-serif;
+    margin-top: 3px;
 }
 .list_item {
     position: relative;
@@ -152,7 +167,50 @@
 }
 
 .About_navbar .Home_line {
-    padding-right: 10px;
-    margin: -6px 50px 0px 5px;
+    padding-right: 17px;
+    margin: -6px 25px 0px 5px;
+}
+
+.main_navbar.sticky .header-1-logo {
+    -webkit-clip-path: polygon(100% 0,100% 71%,50% 71%,0 71%,0 0);
+    clip-path: polygon(100% 0,100% 71%,50% 71%,0 71%,0 0);
+}
+.header-1-logo {
+    position: relative;
+    background: #f96822;
+    -webkit-clip-path: polygon(100% 0,100% 71%,50% 100%,0 71%,0 0);
+    clip-path: polygon(100% 0,100% 71%,50% 100%,0 71%,0 0);
+    -webkit-transition: -webkit-clip-path .4s;
+    transition: -webkit-clip-path .4s;
+    transition: clip-path .4s;
+    transition: clip-path .4s,-webkit-clip-path .4s;
+    height: 82px;
+    width: 170px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    padding-top: 11px;
+    text-align: center;
+    margin-right: -4.5rem;
+    margin-left: -4.5rem;
+}
+
+.login-users {
+    position: relative;
+}
+.login-users button {
+     background: none;
+     border: none; 
+}
+.login-users svg {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -1px;
+}
+
+.login-user {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 10px;
 }
 

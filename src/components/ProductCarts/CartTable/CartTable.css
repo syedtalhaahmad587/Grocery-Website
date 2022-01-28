@@ -1,0 +1,123 @@
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 32px;
+    padding: 2rem 6rem;
+}
+
+.eg-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+.cart-table tbody td img {
+    width: 54px;
+    height: 64px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.eg-table thead {
+    background: #fff;
+}
+.table>thead {
+    vertical-align: bottom;
+}
+
+.eg-table thead tr {
+    border-width: 2px;
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.eg-table thead tr th {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00152b;
+    opacity: 1;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+    border-width: 1px;
+
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: currentColor;
+}
+
+.table>tbody {
+    vertical-align: inherit;
+}
+
+.eg-table tbody tr td {
+    font-weight: 400;
+    color: #848484;
+    text-align: center;
+    border-width: 1px;
+    vertical-align: middle;
+}
+.delete-icon {
+   font-size: 28px;
+}
+
+.quantity {
+    background-color: #eeeeee;
+    position: relative;
+    width: 60px;
+    margin: auto;
+    padding: 10px 0px;
+    border-radius: 4px;
+}
+.quantity-count {
+    padding-right: 18px;
+}
+.cart-quantity-count {
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 8px;
+}
+.quantity-plus {
+    position: absolute;
+    margin-top: -7px;
+    background: none;
+    border: none;
+    font-size: 10px;
+}
+.cart-plus-quantity {
+    margin-top: 4px !important;
+    padding-left: 10px; 
+}
+
+.cart-plus-quantity:hover {
+   color: var(--them_color);
+}
+
+
+.quantity-minus {
+    position: absolute;
+    margin-top: 18px;
+    /* margin-left: 0px; */
+    background: none;
+    border: none;
+    font-size: 10px;
+}
+
+.cart-minus-quantity {
+    margin-top: 26px;
+    padding-left: 10px; 
+}
+
+.cart-minus-quantity:hover {
+    color: var(--them_color);
+ }
+ .NoItem {
+   margin: 3rem 0rem;
+   font-size: 3rem;
+   font-weight: 400;
+    color: #848484;
+    font-family: manrope,sans-serif;
+ }

@@ -4,18 +4,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { BsFillCartFill } from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 import { isNumberDec } from  "../../redux/action"
+import { useNavigate } from 'react-router-dom';
 const Cart_popup = () => {
+  const navigate = useNavigate();
   const [totalprice , settotalprice ] = useState(0)
-   const cart_product = useSelector(state => state.product)
-   console.log(cart_product)
-   const dispatch = useDispatch()
-   const quantity = useSelector(state => state.quantity)
-  // const totalPrice = useSelector(state => state.total)
-  
+   const cart_product = useSelector(state => state.product);
+   console.log(cart_product);
+   const dispatch = useDispatch() 
+   const quantity = useSelector(state => state.quantity);
+
    const [popup_cart , setpopup_cart ] = useState(cart_product);
    const  Add_cart = (item , index , operation) => {
     popup_cart[index].count = item.count ? operation === "Inc" ? item.count + 1  : item.count - 1 : 0;
-       
     setpopup_cart([...popup_cart])
    } 
 
@@ -30,6 +30,14 @@ const Cart_popup = () => {
        settotalprice(price)
 
    },[cart_product , settotalprice ] )
+
+   const checkcart = ( e , popup_cart)=> {
+    e.preventDefault();
+     console.log(popup_cart);
+    // navigate(`/productcart/${popup_cart}` );
+       navigate("productcart");       
+   }
+   
     return (
         <div>   
    <div className="container">
@@ -47,6 +55,7 @@ const Cart_popup = () => {
    {cart_product.map((item , index ) => {
            return (
                <>
+               <div className='cart-nprm' >
     <ul className="shopping-cart-items" key={item.id}> 
       <li className="clearfix">
         
@@ -74,6 +83,7 @@ const Cart_popup = () => {
  
 </div>
 <hr className='border_line'></hr>
+</div>
     </>        
            )        
     } ) }
@@ -81,12 +91,19 @@ const Cart_popup = () => {
    <div className='cart_empty'>
      <img src="images/empty-cart.svg" title='' />
      <p>No items in your cart</p>
+    
      </div> }
-    <a href="#" className="button">Checkout</a>
+     
+     <div className='button'>
+      {!cart_product.length == 0 ?  
+     <button  onClick={(e) => checkcart( e , popup_cart) } >Checkout</button>
+     : <button  disabled  onClick={(e) => checkcart( e , popup_cart) } >Checkout</button>
+    }
+     </div>
+    
     </div>
-   
-  
-</div> 
+ </div> 
+
         </div>
     )
 }

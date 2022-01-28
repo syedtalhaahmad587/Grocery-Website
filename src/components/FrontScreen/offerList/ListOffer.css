@@ -8,7 +8,7 @@
 }
 
 .backGround_1 {
-    background-image: url("../../../assets/eggdairy.jpg");
+    background-image: url("../../../assets/banner-g3.png");
       width: 400px;
       height: 200px;
       position: 100% 100%;
@@ -35,7 +35,7 @@
   }
 
   .backGround_2 {
-    background-image: url("../../../assets/basketimage.jpg");
+    background-image: url("../../../assets/banner-g2.png");
       width: 400px;
       height: 200px;
       position: 100% 100%;

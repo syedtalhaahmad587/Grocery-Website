@@ -4,12 +4,10 @@ const INITIAL_STATE = {
   quantity: 0,
   total: 0,
   updateInc : 0,
-  
-
 };
 
 const reducer = (state = INITIAL_STATE, action) => {
-  let updatePrice = 0
+  let updatePrice = 0;
   switch (action.type) {
     case 'GET_PRODUCT':
            const check = state.product.find((item) => item.id ===  action.payload.id)
@@ -19,12 +17,10 @@ const reducer = (state = INITIAL_STATE, action) => {
                                item.count = action.payload.count
                                item.price = item.price *  item.count
                               item.total = item.price * Number(action.payload.count)                                                                              
-                          }
-                           
+                          } 
                           return item;
                         
-                    } )
-                   
+                    } );
                     return {
                       ...state,
                       product: increment
@@ -60,6 +56,7 @@ const reducer = (state = INITIAL_STATE, action) => {
            default:
       return state
   }
+  
 } 
 
 

@@ -1,0 +1,74 @@
+.user_vr_page {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.user_title {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: manrope,sans-serif;
+    color: #00152b;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.login-btn {
+    border-radius: 5px;
+    padding: 12px 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.form-choice-area {
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.form-choice-area p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #505050;
+    font-family: work sans,sans-serif;
+    margin-bottom: 16px;
+}
+
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+
+.wrap_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-choice-area .social-btn {
+    padding: 25px 32px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    word-wrap: break-word;
+}
+
+.bg-light-blue {
+    background: #4285f4;
+}
+
+.bg-facebook {
+    background: #4267b2;
+}
+
+.eg-btn .sigup_svg svg {
+    font-size: 18px;
+}
+.eg-btn .facbook_svg svg {
+    font-size: 18px;
+}
+

@@ -4,13 +4,17 @@ import { FaRegUser } from "react-icons/fa"
 const PublicNews = () => {
     return (
         <div>
+            <div className='head-one' >
+            <h2> Special News</h2>
+            <p>The latest foodmaker collaboration with ReGrained’s food</p>
+            </div>
             <div className="row_wrap">
                 <div className="wrap">
                     <img src="images/gooddelivery.jpg" alt="" />
                     <div className="succes_store">
                         <div className="succes_store_grocerys">
                             <h4>The name of your grocery store can make or break its success</h4>
-                            <p className="pera">Krem you have a new grocery store opening up and...</p>
+                            <p className="pera-about">Krem you have a new grocery store opening up and...</p>
                             <button>Read More </button>
                             <span className="date">Date 25jun 2021</span>
                         </div>

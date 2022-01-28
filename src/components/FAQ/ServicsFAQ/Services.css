@@ -1,0 +1,131 @@
+.faqq-row {
+    display: flex;    
+    width: 100%;
+    padding: 5rem 9rem 9rem 10rem;
+}
+
+.faqq-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+.col-row-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.col-row-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+.left-widget h5 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: manrope,sans-serif;
+    color: #00152b;
+    margin-bottom: 13px;
+}
+
+.title-20 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: manrope,sans-serif;
+    line-height: 1.6;
+    color: #505050;
+}
+
+.para{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: work sans,sans-serif;
+    color: #848484;
+    line-height: 1.7;
+}
+.contact-widget {
+    padding: 20px;
+}
+
+.box--shadow {
+    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+}
+.contact-left .conact-left-btn {
+    padding: 13px 50px !important ;
+    
+}
+.innner-fre input  {
+    
+    outline: none !important ;
+    
+}
+
+.innner-fre textarea {
+    outline: none !important ;
+}
+.contact-left textarea {
+    padding: 12px 0px 72px 12px;
+    margin-bottom: 40px;
+}
+
+textarea {
+    padding: 8px 10px;
+    background: #fff;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    border: 1px solid #eee;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.form-inner {
+    margin-bottom: 25px;
+    margin-left: 0px !important ;
+}
+.faq-left-area {
+    margin-right: 22px;
+}
+
+.section-title4 {
+    text-align: center;
+    margin-bottom: 26px;
+    margin-top: -6px;
+}
+
+.section-title4 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: manrope,sans-serif;
+    color: #00152b;
+    margin-bottom: 10px;
+    line-height: 50px;
+    margin-top: -7px;
+}
+.section_title7 h2  {
+   padding-top: 25px;
+   font-size: 30px;
+    font-weight: 800;
+    font-family: manrope,sans-serif;
+    color: #00152b;
+    padding-bottom: 20px;
+    line-height: 50px;
+    margin-top: -7px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.left-widget h4 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: manrope,sans-serif;
+    color: #00152b;
+    margin-bottom: 10px;
+}
+.contact-left p {
+    margin-bottom: 20px;
+}

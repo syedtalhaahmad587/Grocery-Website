@@ -3,9 +3,15 @@
     margin: 30px 150px 0px 150px;
 }
 .row_wrap2 {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     margin: 20px 20px;
-    padding: 14px 14px
+    padding: 14px 14px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+.row_wrap2:hover {
+    border: 1px solid #fff;
+    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
 }
 .row_wrap2 img {
     width: 130px;
@@ -68,6 +74,24 @@
     color: #a1a1a1;
 
 }
-.pera {
+.head-one {
+    text-align: center;
+    padding-bottom: 33px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+}
+.head-one h2  {
+    font-weight: 700;
+    font-size: 30px;
+    color: #00152b;
+}
+.head-one p {
+    padding-top: 10px;
+    color: #848484;
+}
+.pera-about {
     margin-bottom: 12px;
+    margin-top: 12px;
+
 }

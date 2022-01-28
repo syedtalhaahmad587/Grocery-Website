@@ -2,12 +2,20 @@
 
 .food_zone {
     text-align: center;
-    padding: 20px 0px;
+    padding: 4rem 0rem;
+}
+
+.food_zone h1 {
+  font-weight: 700;
+    font-size: 30px;
+    color: #00152b;
+    font-family: 'Manrope', sans-serif;
 }
 .food_zone p {
-    color: #616e7b;
-    margin-top: 10px;
-    margin-bottom: 25px;
+  font-size: 16px;
+  color: #848484;
+  font-family: 'Manrope', sans-serif;
+  padding-top: 13px;
 
 }
 .display {
@@ -22,23 +30,36 @@
   }
 
 .slider_style {    
-    justify-content: center;
-    align-items: center;
-    height: 130px;
-    width: 50%;
-    color: #fff;
-    margin: 0 15px;
-    background-color: white;
-    border: 1px solid black;
+  text-align: center;
+  min-height: 155px;
+  border: 1px solid #eee;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  margin-top: 24px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  width: 200px;
+  display: inline-block;
   }
 
 .slider_style:hover  {
-     background-color: var(--them_color);
-     color: white;
+  background: #f96822;
+  border: 1px solid #f96822;
+     /* color: white; */
      transition: 0.5s ease;
      overflow: hidden; 
+    color: #fff !important ;
    
 }
+/* .slider_style h1:hover {
+  color: white;
+} */
+/* .items:hover {
+  color: white;
+} */
 
 .items {
     text-align: center;

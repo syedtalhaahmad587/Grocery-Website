@@ -1,6 +1,7 @@
 import React, { useState } from "react"
-import statisfy from "./Api"
-import "./UserStatisfy.css"
+import statisfy from "./Api";
+import "./UserStatisfy.css";
+import Scrool_Bar from "../../UseScroll/Scroll"
 
 const UserStatisfy = () => {
     const [data  , setdata] = useState(statisfy)
@@ -23,7 +24,7 @@ const UserStatisfy = () => {
                             <p className="logo_section">{logo}</p>
                             <h4 className="heading_section" >{point}</h4>
                             <p className="pera_section">{text}</p>
-                            <button className="button-section" >{btn}</button> 
+                            <button className="button-section" ><Scrool_Bar showBelow={250} title={btn} /></button> 
                             </div> 
                               </div>
                               </>

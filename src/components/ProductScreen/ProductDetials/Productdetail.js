@@ -25,9 +25,8 @@ const ProductDetail = () => {
        <>
           <Navbar /> 
           <Grocery_screens
-            products_heading="productsidebar"
-           isProduct_detail={true}
-             isProduct_text={true}  />
+            gr_pera="Product_details"
+            heading="Product Details" Userheading="Product Details"/>
              <ProductSelect details={detail} />
              <OverView />
              <ProductList list={viewitem} isRelated_product={true} related_heading={true} related_product_item= "related_product_items"  />

@@ -34,7 +34,8 @@ const Modal = () => {
           <div className="item_img" >
           <img src={image} alt="" />
           </div>
-             <div className="Item_content"> <h1>{category}</h1>
+             <div className="Item_content"> 
+             <h1>{category}</h1>
              </div>
              <div><span>{icon}</span></div>
              </div>

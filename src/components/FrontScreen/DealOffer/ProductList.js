@@ -11,13 +11,9 @@ import { useDispatch , useSelector } from "react-redux";
 const ProductList = (props) => {
   const {in_product , sidebar_row , sidebar_list ,  viewitems , isRelated_product , 
         related_heading , related_product_item, list  } = props
-  const navigate = useNavigate();
-  // const [related , setrelated ] = useState({viewitems})
-  console.log(viewitems)
-
-    
+  const navigate = useNavigate();  
     const cart_product = useSelector(state => state.product)
-    console.log(cart_product)
+
     const [cartcheck, setcartcheck] = useState(0)
     const [addcount , setaddcount] = useState()
     const  [data , setdata] = useState([...list])
@@ -28,23 +24,15 @@ const ProductList = (props) => {
       setdata([...list]);
     }, [list])
      
-     useEffect(() => {
-       cart_product.map((item , index ) => {
-           if(item.id === data[index].id){
-             item.count = data[index].count       
-            }
-               
-      } )
-     
-
-               },[cart_product]  ) 
+   
        
        
       const dispatch = useDispatch()
     const ratingChanged = (newRating) => {
       };
-      const Add_Card = (item , index , operation ) => {  
-
+      const Add_Card = ( e , item , index , operation ) => {  
+        e.preventDefault();
+        e.stopPropagation()
           data[index].count = item.count ? operation === "inc" ?  item.count + 1 : item.count - 1 : 1;
         setdata([...data ])
         setbtnchg(false) 
@@ -54,8 +42,8 @@ const ProductList = (props) => {
             );       
       }
 
-      const routeTo = (id , category  ) => {
-        
+      const routeTo = ( e , id , category) => {
+         e.preventDefault();
         navigate(`/productdetail/${category}/${id} `, {search: id , list : category })
         
       //  setdata(updateItems);
@@ -76,13 +64,13 @@ const ProductList = (props) => {
                 const { image , text , price , rating , id , btn , category  } = item;
                 return (
                     <>
-                <div className={`product_list ${sidebar_list}` } key={index} onClick={!isRelated_product ? () => routeTo(id , category  ) : () => {}}>
+                <div className={`product_list ${sidebar_list}` } key={index} onClick={!isRelated_product ? (e) => routeTo( e , id , category ) : () => {}}>
                 <div className="product_list_cart"> 
                 <div className="img_src"><img src={`${window.location.origin}/${image}`} alt="" /></div>
                 <p>{text}</p>
                 <h4>{price}</h4>
                 <span  className="Stars">
-                <ReactStars
+                   <ReactStars
                     className="Stars"
                     count={5} 
                     onChange={ratingChanged}
@@ -95,13 +83,13 @@ const ProductList = (props) => {
                     activeColor="#ffd700"/>
                     </span>
                   { !item.count  ? <div className="Add_to_card">
-                       <button  onClick={() =>  Add_Card(item  , index , "inc"  )}>{btn}</button>
+                       <button  onClick={(e) =>  Add_Card( e , item  , index , "inc"  )}>{btn}</button>
                    </div> :  <span className="Add_to_card" >
                    <button className="count_handling"><div className="add_cart_price">
-                   <div className="btn_inc" onClick={() =>  Add_Card(item  , index , "dec"  )}><AiOutlineMinusCircle/></div>
+                   <div className="btn_inc" onClick={(e) =>  Add_Card( e ,  item  , index , "dec"  )}><AiOutlineMinusCircle/></div>
                    </div>
                    <div className="collect_cart_count">{item.count}</div> <div className="minus_cart_price">
-                   <div className="btn_dec" onClick={() =>  Add_Card(item  , index , "inc" )}><FiPlusCircle/></div>
+                   <div className="btn_dec" onClick={(e) =>  Add_Card( e , item  , index , "inc" )}><FiPlusCircle/></div>
                    </div></button> </span> }
                                </div>
             </div>

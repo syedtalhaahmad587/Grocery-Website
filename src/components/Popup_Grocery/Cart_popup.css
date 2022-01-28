@@ -18,15 +18,15 @@
     nav .navbar-right {
       float: right;
     }
-    ul li {
+    .cart-nprm ul li {
         display: flex;
         padding-left: 20px;
       }
-      ul li a {
+      .cart-nprm ul li a {
           color: #777777;
           text-decoration: none;
         } 
-        ul li a :hover {
+      .cart-nprm ul li a :hover {
             color: black;
           }
         
@@ -123,7 +123,7 @@
     float: left;
   }
   
-  .button {
+  .button button  {
     background: var(--them_color);
     color: white;
     text-align: center;
@@ -135,6 +135,7 @@
     width: 320px;
     padding: 10px 0px;
     border-radius: 0px 0px 3px 3px;
+    border: var(--them_color);
   }
     .button :hover {
       background: lighten(green, 3%); 

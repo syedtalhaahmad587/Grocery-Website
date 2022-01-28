@@ -38,7 +38,7 @@ const  OverView = () => {
                     {VeiwData.map((item , index) => {
                         const {img , heading , date , starValue , text , like , lovly , reply } = item 
                         return (
-                         <div key={index} >
+                         <div className="veiw-list klg-comment"  key={index} >
                           <div className="display_flex product_view_data ">  
                               <div className="view_img">
                               <img src={`${window.location.origin}/${img}`} width="200px" height="200px"  />

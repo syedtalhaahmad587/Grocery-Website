@@ -53,13 +53,20 @@
     color: #fff;
 }
 .veiw_details_text {
-    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    border: 1px solid #eee;
     padding: 28px 28px;
     width: 811px;
     line-height: 1.5;
     color: 15px;
     color: #848484;
+ 
 }
+/* .klg-comment {
+     border: 1px solid #eee;
+     padding: 28px 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+} */
 
 .product_view_data .view_img img{
     width: 50px;

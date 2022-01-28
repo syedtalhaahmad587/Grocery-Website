@@ -1,0 +1,337 @@
+.yn-container {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0rem;
+}
+.egh-acount {
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: column!important;
+    margin-right: 1rem!important;
+}
+
+.egh-acount button {
+    padding: 13px 40px;
+    font-size: 20px;
+    font-weight: 700;
+   background: white;
+   color: #848484;
+   background: #fff;
+   -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+   box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+   transition: .3s ease;
+   width: 100%;
+   border: 1px solid #fff ;
+   margin-bottom: 1.5rem;
+   border-radius: 4px;
+}
+.ig-detials p {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.egh-acount button:hover {
+  background: var(--them_color);
+  color: #fff;
+  border-color: var(--them_color);
+}
+
+.egh-details {
+    display: flex;
+    margin: 0px 32px;
+}
+
+.egh-details p {
+   text-align: center;
+   color: black;
+}
+.pc-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    flex-direction: column;
+    margin-left: 1.5rem;
+    height: 330px;
+    padding-bottom: 4rem;    
+    width: 800px;
+}
+
+.pi-details {
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    padding: 35px 50px;
+    text-align: center;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: 4px;
+
+}
+.pi-details .nm-pi {
+    font-size: 30px;
+}
+.pi-details .nm-hading {
+    font-weight: 400;
+
+}
+
+.ed-navpill svg {
+    margin-right: 6px;
+    font-size: 18px;
+    margin-bottom: -2px;
+}
+.Profile {
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    flex-direction: column;
+    margin-left: 1.5rem;
+    width: 800px;
+}
+.Profile h3 {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.profile-area {
+    padding: 50px 40px;
+    border-radius: 5px;
+}
+
+.box--shadow {
+    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.profile-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #00152b;
+    font-family: manrope,sans-serif;
+    margin-bottom: 25px;
+}
+ h5 {
+    margin: 0;
+    padding: 0;
+    margin-top: -7px;
+}
+
+.lg-Profile {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.le-profile {
+    margin-left: 18px;
+}
+
+.le-profile button  {
+    padding: 8px 36px;
+    color: black;
+    background: #fff;
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    border: 1px solid #fff;
+    margin-right: 12px; 
+}
+
+.le-profile button:hover {
+    box-shadow: inset 150px 0 0 0 #f96822;
+    background: #f96822;
+    border: 1px solid #f96822;
+    color: #fff;
+}
+.lg-Profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+.row_profile {
+    /* --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0; */
+    margin: 30px 12px;
+    /* margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5); */
+}
+.col_12  {
+   display: flex;
+}
+
+.col_6 {
+     margin-right: 12px;
+     margin-left: 12px;
+     
+}
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.form-inner {
+    margin-bottom: 25px;
+    margin-left: 12px;
+}
+.label {
+    display: inline-block;
+}
+.form-inner_user {
+    margin-bottom: 25px;   
+}
+
+.form-inner_user input {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    width: 100%;
+    transition: .3s ease;   
+}
+.form-inner_user {
+    margin-bottom: 25px;
+    
+}
+
+.form-inner input , .form-inner select {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    width: 100%;
+    transition: .3s ease;
+}
+.form-inner_user select {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    width: 300px;
+    transition: .3s ease;
+}
+
+
+.form-inner input, select {
+    display: block;
+    width: 100%;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.form-inner select {
+    font-size: 12px;
+    color: #848484;
+}
+
+.zip_user input {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    /* width: 100%; */
+    transition: .3s ease;
+    margin-right: 24px;
+}
+
+.submit-btn {
+    padding: 13px 28px;
+    margin-left: 13px;
+}
+
+.primary--btn {
+    background-color: #f96822;
+    border: 1px solid #f96822;
+    color: #fff;
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: .2s ease;
+}
+.primary--btn:hover {
+    -webkit-box-shadow: inset 150px 0 0 0 #fff;
+    box-shadow: inset 150px 0 0 0 #fff;
+    background: #fff;
+    border: 1px solid #f96822;
+    color: #f96822;
+}
+.eg-btn {
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* .form-inner_user select option {
+    padding: 12px 0px;
+} */
+
+.egr-table {
+    width: 700px;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin: 4rem 3rem 0rem 3rem;
+}
+
+.mb-0 {
+    margin-bottom: 0!important;
+}
+
+.egr-table thead {
+    background: #fff;
+}
+.table>thead {
+    vertical-align: bottom;
+}
+
+.order-table-area .egr-table thead tr {
+    border-width: 0;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: currentColor;
+}
+
+.egr-table thead tr th {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00152b;
+    opacity: 1;
+    padding: 20px;
+    vertical-align: top;
+    text-align: center;
+    border-width: 1px;
+}
+
+.order-table-area .order-table tr td {
+    padding: 20px 15px;
+}
+
+
+element.style {
+}
+.order-table-area .order-table tr td {
+    padding: 20px 15px;
+}
+.egr-table tbody tr td {
+    font-weight: 400;
+    color: #848484;
+    text-align: center;
+    border-width: 1px;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.eg_cards {
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    height: 260pxz;
+}
+
+.eg_cards p {
+    line-height: 0.5;
+    margin-top: 25px;
+}
+
+.dr-cameron .pf_cameron {
+    margin-left: 5px;
+}
+.Yr-acount {
+    margin-left: 1.5rem !important;
+    width: 800px;
+}

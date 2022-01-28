@@ -9,9 +9,8 @@ const ProductSidebar = () => {
           <>
           <Navbar />
           <Grocery_screens 
-          products_heading="productsidebar"
-           isProduct_sidebar={true}
-           sidebar_heading={true}/>
+           heading="Product Sidebar" Userheading="Product Sidebar"
+           gr_pera="Product_Sidebar"/> 
             <Sidebarfilter />
             <Delivery  className="delivery_authoritizes"/>
             <Footer />

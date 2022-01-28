@@ -10,8 +10,7 @@ const Product = () => {
         <>
          <Navbar className="About_navbar" />
          <Grocery_screens  
-         isProduct={true}
-         isProduct_home={true}
+          heading="Product" Userheading="Product"
          className="grocery_product"
          />
          <ProductItem />

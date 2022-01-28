@@ -11,7 +11,7 @@ const Product = () => {
     return (
         <>
           
-            <div className="food_zone">
+            <div className="food_zone food-grocery">
                 <h1>Our Special Product</h1>
                 <p>A virtual assistual collects the product from your list</p>
             </div>
