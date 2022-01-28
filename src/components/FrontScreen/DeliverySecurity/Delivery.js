@@ -6,10 +6,10 @@ import {GiPayMoney } from "react-icons/gi"
 import {RiSecurePaymentFill } from "react-icons/ri"
 
 
-const Delivery = () => {
+const Delivery = (props) => {
     return (
         <div>
-             <div className="main_wrap">
+             <div className={`main_wrap ${props.className}`}>
                  <div className="wrap_shipping">
                      <div className="wrap_order">
                             <span className="shipping"><FaShippingFast/></span>

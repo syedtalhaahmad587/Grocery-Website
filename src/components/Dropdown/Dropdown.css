@@ -1,0 +1,28 @@
+.custom-dropdown {
+    padding: 12px;
+    /* position: relative; */
+    
+}
+
+.custom-dropdown-selection {
+    background-color: whitesmoke;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    /* width: 320px; */
+}
+
+.custom-dropdown .items-holder {
+     border-radius: 6px;
+     background-color: blue;
+}
+
+.custom-dropdown .items-holder .dropdown-item {
+  padding: 10px 16px;
+  cursor: pointer;  
+  
+
+}
+.custom-dropdown .items-holder .dropdown-item:focus {
+    color: yellow;
+}

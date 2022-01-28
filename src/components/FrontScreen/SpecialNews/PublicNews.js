@@ -8,7 +8,7 @@ const PublicNews = () => {
                 <div className="wrap">
                     <img src="images/gooddelivery.jpg" alt="" />
                     <div className="succes_store">
-                        <div className="succes_store_grocery">
+                        <div className="succes_store_grocerys">
                             <h4>The name of your grocery store can make or break its success</h4>
                             <p className="pera">Krem you have a new grocery store opening up and...</p>
                             <button>Read More </button>

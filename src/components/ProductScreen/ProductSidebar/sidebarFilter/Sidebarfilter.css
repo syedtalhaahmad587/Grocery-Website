@@ -1,0 +1,39 @@
+.filter_item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 200px;
+}
+
+.filterProduct {
+    display: flex;
+}
+.filterProduct select {
+    padding: 4px 0px;
+    margin: 0px 4px;
+}
+.select_filter {
+     background: blue;
+     color: black;
+     border: 1px solid blue;
+     border-color: blue;
+}
+.select_filter option {
+    color: black;
+    background: white;
+}
+.select_popularity  {
+    padding: 0px 20px 0px 2px  !important ;
+}
+.productlist_item {
+    display: flex;
+    position: relative;
+    justify-content:space-around
+}
+.sidebar_item {
+    /* width: 75%; */
+}
+.sidebar_input {
+       width: 42%;
+    margin-right: 159px !important;
+}
+

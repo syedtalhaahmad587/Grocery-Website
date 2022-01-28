@@ -1,0 +1,33 @@
+.Grocery_background {
+    background-image: url("../../../assets/About_Grocery.png");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.Abouts_Us_screen {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+
+}
+
+.grocery_about span {
+    margin-top: 4px;
+}
+.grocery_about {
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-left: 26px;
+}
+.grocery_product {
+    margin-left: 7px;
+}   
+.productsidebar {
+   margin-left: 62px;
+}

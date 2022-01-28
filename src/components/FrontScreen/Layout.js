@@ -8,43 +8,44 @@ import Product from "../FrontScreen/SpecialProduct/Product"
 import PublicNews from "../FrontScreen/SpecialNews/PublicNews"
 import Delivery from '../FrontScreen/DeliverySecurity/Delivery';
 import Footer from "../FrontScreen/Footer/Footer";
+import Grocery from "../FrontScreen/Grocery/Grocery";
+import list from './DealOffer/ProductListApi'
 const Layout = () => {
 
     return (
         <>
-            <Navbar />
+            <Navbar 
+              isHome={true}
+               Search={true}
+               seachIcon={true}
+               About_navbar={false} 
+               
+            />
             <div>
-                <div className="GroceryImages">
-                    <div className="Grocery_Text">
-                        <h1>Enjoy Organic Grocery With The <span className="display_block">Best Quality</span></h1>
-                        <p>Get Your product delivered at your doorsteps all day everyday</p>
-                        <div className="grocery_input">
-                            <input type="text" name="search" />
-                            <button className="search" name="search" >SEARCH</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <Modal/>
-            <div>
-              <ProductList />
+              <Grocery />
+              </div>
+              <div>
+            <Modal />
             </div>
             <div>
-            <ShowOffer /> 
+                <ProductList list={list} />
             </div>
             <div>
-            <Product/>
+                <ShowOffer />
             </div>
             <div>
-            <PublicNews />
+                <Product />
             </div>
             <div>
-               <Delivery />
+                <PublicNews />
+            </div>
+            <div>
+                <Delivery />
             </div>
             <div>
                 <Footer />
             </div>
-              
+
         </>
     )
 }

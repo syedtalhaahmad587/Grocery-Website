@@ -33,7 +33,7 @@
   }
 
 .slider_style:hover  {
-     background-color: #f86822;
+     background-color: var(--them_color);
      color: white;
      transition: 0.5s ease;
      overflow: hidden; 

@@ -28,7 +28,7 @@ const Footer = () => {
                                 <div className="point1"></div>
                                 <div className="point2">
                                     <div className="Address_show  display_flex" >
-                                        <div className="icon" ><AiOutlineMail /></div>
+                                        <div className="icon"><AiOutlineMail /></div>
                                         <div className="shop_number" ><p>info@example.com</p>
                                             <p>info@support.com</p></div>
                                     </div>
@@ -69,13 +69,15 @@ const Footer = () => {
                          </div>
                     </div>
                     </div>
-                     <div className="display_flex   ">
+                
+                     <div className="last_footer ">
                           <div> 
                               <p>Copyright 2021 EG Shop Grocery I Design By Egens Lab</p>
                           </div>
                           <div>
                                <img src="images/payment.png" alt=""/>
                           </div>
+        
                      </div>
                 </div>
             </div>

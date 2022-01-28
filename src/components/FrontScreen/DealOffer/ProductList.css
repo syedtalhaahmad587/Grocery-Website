@@ -4,8 +4,12 @@
     position: relative;
 }
 
+.row_product_screen {
+    margin: 60px 0px 0px 0px;
+}
+
 .product_list  {
-    display: inline-grid;
+    display: inline-grid !important;
     width: 25%;
     padding: 16px 16px;
 }
@@ -35,8 +39,8 @@
 
 .Add_to_card button {
     border-radius: 25px;
-    background-color: #f86822;
-    border: 1px solid #f86822;
+    background-color: var(--them_color);
+    border: 1px solid var(--them_color);
     text-align: center;
     width: 150px;
     height: 30px;
@@ -46,8 +50,8 @@
 }
 .Add_to_card  .count_handling {
     border-radius: 25px;
-    background-color: #f86822;
-    border: 1px solid #f86822;
+    background-color: var(--them_color);
+    border: 1px solid var(--them_color);
     text-align: center;
     width: 150px;
     height: 30px;
@@ -81,4 +85,45 @@
 }
 .btn_inc {
     cursor: pointer;
+}
+.product_sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 25px 312px 0px calc((100% - (292px * 3)) / 2) !important; */
+  padding: 25px 20px 0px calc((100% - (198px * 3)) / 2) !important;
+
+}    
+
+.product_sidebar_list {
+    padding: 16px 34px;
+    flex-basis: 33.333333%;
+}
+
+.product_Related {
+     
+    position: relative;
+    margin-right: 190px;
+    margin-left: 190px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    
+    
+}
+.product_Related::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: #f96822;
+    width: 199px;
+    display: inline-block;
+}
+
+.related_product_items {
+    text-align: center !important ;
+    padding: 0px 200px 0px 200px;
+    z-index: 100;
+    position: relative;
+    margin: 32px 0px;
 }

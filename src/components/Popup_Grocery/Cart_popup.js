@@ -1,42 +1,59 @@
-import React , {useState} from 'react'
+import React , {useEffect, useState} from 'react'
 import "./Cart_popup.css"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { BsFillCartFill } from 'react-icons/bs';
+import { AiOutlineClose } from 'react-icons/ai';
+import { isNumberDec } from  "../../redux/action"
 const Cart_popup = () => {
+  const [totalprice , settotalprice ] = useState(0)
    const cart_product = useSelector(state => state.product)
    console.log(cart_product)
+   const dispatch = useDispatch()
    const quantity = useSelector(state => state.quantity)
-  const totalPrice = useSelector(state => state.totalPrice)
+  // const totalPrice = useSelector(state => state.total)
+  
    const [popup_cart , setpopup_cart ] = useState(cart_product);
    const  Add_cart = (item , index , operation) => {
-    popup_cart[index].count = item.count ? operation === "Inc" ? item.count + 1  : item.count - 1 : 1; 
+    popup_cart[index].count = item.count ? operation === "Inc" ? item.count + 1  : item.count - 1 : 0;
+       
     setpopup_cart([...popup_cart])
-     console.log(item);
-     
-    
    } 
+
+   useEffect(() => {
+     let price = 0;
+         cart_product.forEach(item  => {
+         price +=  item.count * item.price
+         
+         return item;
+       }  )
+
+       settotalprice(price)
+
+   },[cart_product , settotalprice ] )
     return (
         <div>   
    <div className="container">
     <div className="shopping-cart">
-    { cart_product.length > 0 ?
-      <div>
     <div className="shopping-cart-header">
     <BsFillCartFill /><span className="badge">{quantity}</span>
       <div className="shopping-cart-total">
         <span className="lighter-text">Total:</span>
-        <span className="main-color-text">${totalPrice}</span>
+        <span className="main-color-text">${totalprice}</span>
       </div>
     </div>
 
-   
+    { cart_product.length > 0 ?
+      <div>
    {cart_product.map((item , index ) => {
            return (
                <>
-    <ul className="shopping-cart-items" key={index}> 
+    <ul className="shopping-cart-items" key={item.id}> 
       <li className="clearfix">
+        
         <img src={item.image}  alt="item1" />
         <span className="item-name">{item.text}</span>
+        <span  className='close_icon' onClick={() => dispatch(isNumberDec( item , item.id))}> <AiOutlineClose/> </span> 
+        
         {/* <span className="item-price">{item.price}</span> */}
         {/* <span className="item-quantity">{item.rating}</span> */}
       </li>
@@ -48,9 +65,11 @@ const Cart_popup = () => {
          <span className='product_rate_plus' onClick={() => Add_cart(item , index ,"Inc")} ><button>+</button></span>
          <span className='product_rate_Multiply'>*</span>
          <span className='product_rupess'>{item.price}</span> 
+        
 </div>
 <div className='Product_rupees'>
     <p>{item.price * item.count }</p>
+   
  </div>
  
 </div>
@@ -58,10 +77,15 @@ const Cart_popup = () => {
     </>        
            )        
     } ) }
+   </div> :  
+   <div className='cart_empty'>
+     <img src="images/empty-cart.svg" title='' />
+     <p>No items in your cart</p>
+     </div> }
     <a href="#" className="button">Checkout</a>
     </div>
-    : "Sorry your cart is currently empty"}
-  </div>
+   
+  
 </div> 
         </div>
     )
