@@ -1,5 +1,5 @@
 import React from "react"
-import "./ListOffer.css"
+import "./ListOffer.scss"
 
 const ShowOffer = () => {
     return (

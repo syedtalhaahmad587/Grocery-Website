@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,19 +7,68 @@
 }
 .main_navbar {
     background: #ffffff;
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    box-shadow: 4px 8px 30px rgb(141, 141, 141 );
     padding: 16px 0px 5px 0px;
     position: fixed;
     width: 100%;
     z-index: 200;    
     height: 60px;  
+   
     
 }
+.vertically_bottom__navbar-Row {
+    display: none;
+}
+.vertically__navigateNavbar {
+    display: none;
+    
+}
+@include respond-to(mobile-small) {
+    .main_navbar {
+        display: none;
+    }
+    .vertically {
+         display: visible;
+          position: fixed;
+          max-width: 100%;
+          width:  100%;
+          padding: 8px 20px;
+          background: #ffffff;
+          box-shadow: 4px 8px 30px rgb(141, 141, 141 );
+         z-index: 300; 
+        &__navigateNavbar {
+                 display: flex;
+                 justify-content:space-between;
+                 align-items: center;
+        }
+    }
+    .vertically_bottom {
+        display: visible;
+        background: #ffffff;
+            box-shadow: 4px 8px 30px rgb(141, 141, 141 );
+        position: fixed;
+        max-width: 100%;
+        width:  100%;
+        bottom: 0px;
+        z-index: 300;
+        &__navbar-Row {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 18px;
+            font-size: 20px;
+            align-items: center;
+
+        }
+    }
+ }
 
 .wrapped {
     display: flex;
     justify-content: space-between;
     padding: 0px 35px 0px 35px;
+    @include respond-to(mobile-small) {
+       display: none;   
+    }
 
 }
 
@@ -28,8 +79,8 @@
 
 .un_orderlist li {
     list-style: none;
-    padding: 0px 24px 0px 0px;
-    
+    padding: 0px 30px 0px 0px;
+    cursor: pointer;    
 }
 .un_orderlist li button {
     border: none;
@@ -43,6 +94,7 @@
     position: relative;
     -webkit-transition: .3s ease;
     transition: .3s ease;
+    cursor: pointer;
 }
 .un_orderlist li :hover {
   color: var(--them_color);
@@ -167,8 +219,7 @@
 }
 
 .About_navbar .Home_line {
-    padding-right: 17px;
-    margin: -6px 25px 0px 5px;
+    margin-top: -5px;
 }
 
 .main_navbar.sticky .header-1-logo {
@@ -191,8 +242,8 @@
     top: 0;
     padding-top: 11px;
     text-align: center;
-    margin-right: -4.5rem;
-    margin-left: -4.5rem;
+    margin-right: -6.5rem;
+    margin-left: -6.5rem;
 }
 
 .login-users {
@@ -212,5 +263,9 @@
     font-size: 1.2rem;
     font-weight: 700;
     margin-left: 10px;
+ 
 }
+
+  
+  
 

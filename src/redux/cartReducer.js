@@ -1,4 +1,3 @@
-
 const INITIAL_STATE = {
   product: [],
   quantity: 0,
@@ -6,8 +5,7 @@ const INITIAL_STATE = {
   updateInc : 0,
 };
 
-const reducer = (state = INITIAL_STATE, action) => {
-  let updatePrice = 0;
+const cartReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'GET_PRODUCT':
            const check = state.product.find((item) => item.id ===  action.payload.id)
@@ -15,7 +13,7 @@ const reducer = (state = INITIAL_STATE, action) => {
                     const increment = state.product.map(item => {
                           if(action.payload.id === item.id) {
                                item.count = action.payload.count
-                               item.price = item.price *  item.count
+                               item.price = item.price * item.count
                               item.total = item.price * Number(action.payload.count)                                                                              
                           } 
                           return item;
@@ -29,18 +27,14 @@ const reducer = (state = INITIAL_STATE, action) => {
                   }else{
                 let cart_product = action.payload 
                 console.log(cart_product)
-                let updatedQyt  = state.quantity + 1;
+                let updatedQyt  = state.quantity + 1
                  let updatePrice = state.total  + cart_product.price
                 return {
                   product : [cart_product , ...state.product ], 
                   total: updatePrice,
                   quantity : updatedQyt,
-                
-
                 }  
-             }   
-              
-          break; 
+             }    
           case "DEl" : 
                   let filtered = state.product.filter(product => product.id !== action.id)
                   console.log(state.product)
@@ -60,6 +54,6 @@ const reducer = (state = INITIAL_STATE, action) => {
 } 
 
 
-export default reducer;
+export default cartReducer;
 
  

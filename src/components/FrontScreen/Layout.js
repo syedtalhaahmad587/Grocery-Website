@@ -4,7 +4,7 @@ import "./Layout.css"
 import Modal from "../FrontScreen/ModalGrocery/Modal";
 import ProductList from "../FrontScreen/DealOffer/ProductList"
 import ShowOffer from "../FrontScreen/offerList/ShowOffer"
-import Product from "../FrontScreen/SpecialProduct/Product"
+// import Product from "../FrontScreen/SpecialProduct/Product"
 import PublicNews from "../FrontScreen/SpecialNews/PublicNews"
 import Delivery from '../FrontScreen/DeliverySecurity/Delivery';
 import Footer from "../FrontScreen/Footer/Footer";
@@ -19,32 +19,36 @@ const Layout = () => {
                Search={true}
                seachIcon={true}
                About_navbar={false} 
-               
             />
-            <div>
+            {/* <div>
               <Grocery />
-              </div>
-              <div>
+              </div> */}
+               {/* <div>
             <Modal />
-            </div>
-            <div>
+            </div> */}
+             {/* <div>
                 <ProductList list={list} />
-            </div>
-            <div>
+            </div> */}
+            
+            {/* <div>
                 <ShowOffer />
-            </div>
-            <div>
-                <Product />
-            </div>
-            <div>
+
+            </div> */}
+            
+            {/* <div>
+                <ProductList list={list} />
+            </div> */}
+            
+            {/* <div>
                 <PublicNews />
-            </div>
-            <div>
+            </div> */}
+            
+            {/* <div>
                 <Delivery />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
                 <Footer />
-            </div>
+            </div>  */}
 
         </>
     )

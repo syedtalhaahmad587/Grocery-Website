@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Footer.css"
+import "./Footer.scss"
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail  , AiOutlineTwitter } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";

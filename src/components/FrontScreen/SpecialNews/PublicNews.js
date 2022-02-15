@@ -1,5 +1,5 @@
 import React from 'react'
-import "./PublicNews.css"
+import "./PublicNews.scss"
 import { FaRegUser } from "react-icons/fa"
 const PublicNews = () => {
     return (

@@ -6,15 +6,14 @@ import Grocery_screens from "../../../AboutScreen/ModalGrocerys/AboutGrocery";
 import Footer from "../../../FrontScreen/Footer/Footer";
 import Navbar from "../../../Navbar";
 import { useNavigate  , useHistory } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector  } from "react-redux";
 import { registerInitiate } from "../../../../redux/action"
-import { db , set , ref } from "../../../../config/firebase";
+
 
 
 
 const RegisterUser = () => {
-  const userKey = useSelector(state => state.user);
-  console.log(userKey)
+ 
   const initailState = {
     firstName : "",
     lastName : "",
@@ -24,26 +23,28 @@ const RegisterUser = () => {
     
   }
   const [object , setObject] = useState(initailState);
-  const { currentUser } = useSelector((object) => object.user);
-  const dispatch = useDispatch(); 
-  const navigate = useNavigate();
-  // const history = useHistory()
+  
+  const dispatch = useDispatch();    
+  const navigate = useNavigate();    
+
+  const { user: { loading, success } } = useSelector(state => state);
+  console.log({loading, success})
   useEffect(() => {
-    if(currentUser) {
-        navigate.push("/");
+    if(success) {
+        navigate("/login");
     } 
-  }, [currentUser, navigate  ] );
+  }, [success, navigate ]);
 
   const changeobj = ( value , property ) => {
-    setObject({...object , [property] : value   });
+    setObject({...object , [property] : value });
   }
   const login = (e) => {
     e.preventDefault();
         if(object.password !== object.confirmPassword){
           return;
         }  
-          dispatch(registerInitiate(object.email, object.password, object.firstName ))
-          setObject(initailState)
+          dispatch(registerInitiate(object))
+          setObject(initailState);
   }
   
   const Navigator = useNavigate();

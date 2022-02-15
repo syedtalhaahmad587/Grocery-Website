@@ -8,6 +8,7 @@ import { getAuth,
       onAuthStateChanged,
       GoogleAuthProvider,
       FacebookAuthProvider,
+      signInWithCustomToken
      } from "firebase/auth";
       import { getDatabase, 
         set, 
@@ -16,7 +17,8 @@ import { getAuth,
         ref, 
         onValue, 
         onChildAdded, 
-        child
+        child,
+        get
         } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -40,7 +42,7 @@ const auth = getAuth(app);
 const db = getDatabase(app);
 
 export { auth, 
-         db,
+         db,  
     GoogleAuthProvider, 
     FacebookAuthProvider,
     createUserWithEmailAndPassword,
@@ -48,11 +50,14 @@ export { auth,
     signOut,
     onAuthStateChanged,
     set, 
-    push,  
+    push,   
     remove, 
     ref, 
+    get,
     onValue, 
-    onChildAdded, 
-    child
-};
+    onChildAdded,  
+    child,
+    signInWithCustomToken,
+    getAuth
+}; 
 

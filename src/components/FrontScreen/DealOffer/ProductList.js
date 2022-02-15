@@ -1,7 +1,7 @@
 import ReactStars from "react-rating-stars-component";
 import React, { useState , useEffect, useLayoutEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./ProductList.css";
+import "./ProductList.scss";
 import ProList from "./ProductListApi";
 import { FiPlusCircle } from "react-icons/fi";
 import { AiOutlineMinusCircle } from "react-icons/ai";
@@ -10,7 +10,7 @@ import { useDispatch , useSelector } from "react-redux";
  
 const ProductList = (props) => {
   const {in_product , sidebar_row , sidebar_list ,  viewitems , isRelated_product , 
-        related_heading , related_product_item, list  } = props
+        related_heading , related_product_item, list } = props
   const navigate = useNavigate();  
     const cart_product = useSelector(state => state.product)
 

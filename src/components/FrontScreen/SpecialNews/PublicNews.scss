@@ -1,6 +1,14 @@
+@import "../../../../responsive.scss";
+
 .row_wrap {
     display: flex;
     margin: 30px 150px 0px 150px;
+    @include respond-to(mobile-small) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        margin: 0px;
+    }
 }
 .row_wrap2 {
     margin: 20px 20px;
@@ -10,17 +18,25 @@
 }
 .row_wrap2:hover {
     border: 1px solid #fff;
-    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    box-shadow: 4px 8px 30px rgb(141, 141, 141);
 }
 .row_wrap2 img {
     width: 130px;
     height: 130px;
+    @include respond-to(mobile-small) {
+        width: 150px;
+        height: 150px;
+
+   }
 }
 .wrap img {
     width: 450px;
     height: 250px;
     margin-bottom: -4px;
+    @include respond-to(mobile-small) {
+         width: 100%;
+
+    }
 
 }
 .succes_store {
@@ -50,9 +66,19 @@
 }
 .row_wrap_div2 {
     display: flex;
+    @include respond-to(mobile-small) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+   }
+    
 }
 .row_wrap_supermark {
     padding: 12px 12px;
+    @include respond-to(mobile-small) {
+        padding: 12px 0px;
+
+   }
 }
 .row_wrap_supermark h3 {
     font-size: 16px;
@@ -79,6 +105,12 @@
     padding-bottom: 33px;
    margin-top: 20px;
    margin-bottom: 20px;
+   font-family: 'Manrope', sans-serif;
+   @include respond-to(mobile-small) {
+    padding: 0px 3px 18px 3px;
+    line-height: 22px;
+    
+   }
 
 }
 .head-one h2  {

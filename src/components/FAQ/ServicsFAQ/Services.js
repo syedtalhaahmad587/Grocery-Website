@@ -25,7 +25,7 @@ const Services = () => {
 <form>
 <div className="form-inner innner-fre ">
 <label>Your Name*</label>
-<input type="text" placeholder="Your Name " /> 
+<input type="text" placeholder="Your Name "/> 
 </div>
 <div className="form-inner innner-fre ">
 <textarea rows="5" placeholder="Type your question"></textarea>

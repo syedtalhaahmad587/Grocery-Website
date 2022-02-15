@@ -10,8 +10,9 @@ const ErrorFAQ = () => {
           <Navbar />
           <Grocery_screens  Userheading="FAQ" heading="FAQ" gr_pera="kr-faq"/>
           <Services />
-          <Footer />
           <Delivery />
+          <Footer />
+         
         </>
     )
 }

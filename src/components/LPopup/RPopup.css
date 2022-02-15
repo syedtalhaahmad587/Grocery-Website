@@ -1,0 +1,165 @@
+.example-warper {
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px #cfcece dashed;
+  }
+
+  .header_account__dropdown__link {
+    background: none;
+    border: none;
+  }
+  
+  .button  {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1em;
+    outline: none;
+    position: relative;
+    font-size: 14px;
+    border: none;
+  }
+  
+  .button:hover,
+  .button.hover {
+    border-color: #2980b9;
+  }
+  /*
+  card 
+  */
+  .card {
+    font-size: 12px;
+  }
+  .card > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .modal {
+    font-size: 12px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    background-clip: padding-box;
+    outline: 0;
+    padding: 10px 0px 10px 16px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: -10rem;
+
+    
+  }
+  .modal .closeSvg {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size: 16px;
+    color: red;
+  }
+  
+  .modal > .header {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal > .actions {
+    margin: auto;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;  
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+  
+  .example-warper-start {
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px #cfcece dashed;
+  }
+  
+  .menu {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+  }
+  .menu-item {
+    cursor: pointer;
+    padding: 5px;
+    height: 28px;
+    border-top: 1px solid rgb(187, 187, 187);
+  }
+  .menu-item:hover {
+    color: #2980b9;
+  }
+.header {
+  margin-right: auto;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.content {
+  color: #707070;
+}
+
+.button-ghost{
+  z-index: 1;
+    cursor: pointer;
+    position: relative;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 40px;
+    border: 1px solid;
+    border-radius: unset;
+    padding: 0 25px; 
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    margin-right: 14px;
+    width: 172px; 
+    word-wrap: normal;
+    margin-right: 14px;
+    width: 172px;
+}
+.full {
+  background: #ffffff;
+  border-color: var(--them_color);
+  color: var(--them_color);
+}
+.non-Full {
+   background: var(--them_color);
+   color: #fff;
+}
+.popup-overlay {
+  position: fixed; 
+    inset: 0px;
+    z-index: 1290;
+    background-color: rgba(52,52,52,0.5);
+
+
+  }

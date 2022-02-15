@@ -34,14 +34,14 @@ import {
         <Route path="productcart" element={<ProductCarts />} />
         <Route path="productcheckout" element={<CheckOut />} />
         <Route path="productacount" element={<MyAcount />} />
-        <Route path="login" element={<UserLogin  />} />
-        <Route path="register" element={<RegisterUser  />} />
-        <Route path="faq" element={<ErrorFAQ  />} />
-        <Route path="error" element={<WebError />} />
-        <Route path="blogGrid" element={<BlogGrid />} />
-        <Route path="blogDetails" element={<BlogDetails />} />
-        <Route path="blogStandard" element={<BlogStandard />} />
-        <Route path="Contact" element={<ContactPage />} />
+        <Route path="/login" element={<UserLogin  />} />
+        <Route path="/register" element={<RegisterUser  />} />
+        <Route path="/faq" element={<ErrorFAQ  />} />
+        <Route path="/error" element={<WebError />} />
+        <Route path="/blogGrid" element={<BlogGrid />} />
+        <Route path="/blogDetails" element={<BlogDetails />} />
+        <Route path="/blogStandard" element={<BlogStandard />} />
+        <Route path="/Contact" element={<ContactPage />} />
       </Routes>
       </div>
       </Router> 

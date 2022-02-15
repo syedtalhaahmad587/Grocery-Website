@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Delivery.css";
+import "./Delivery.scss";
 import {FaShippingFast} from "react-icons/fa"
 import { BiSupport } from "react-icons/bi"
 import {GiPayMoney } from "react-icons/gi"

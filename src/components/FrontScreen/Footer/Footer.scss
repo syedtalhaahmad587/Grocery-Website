@@ -1,3 +1,5 @@
+@import "../../../../responsive.scss";
+
 .control_footer {
     background-color: #00142c;
     color: white;
@@ -6,10 +8,13 @@
 }
 
 .footer {
-    
     display: flex;
     justify-content: space-evenly;
-   
+    @include respond-to(mobile-small) {
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        justify-content: space-between;
+   }
 }
 
 .display_block {
@@ -67,6 +72,9 @@
 .EG_shops {
     position: relative;
     text-align: center;
+    @include respond-to(mobile-small) {
+        text-align: start;
+   }
    
 }
 
@@ -79,12 +87,16 @@
 }
 .EG_shops input  {
     padding: 8px 8px;
-    border: 1px solid white;
+    border: 1px solid #505050;
     background: none;
     outline: none;
     width: 400px;
     color: white;
     margin: 0px 35px;
+    margin: 0px;
+    @include respond-to(mobile-small) {
+     width: 80%;
+    }
 }
 
 .EG_shops button {
@@ -97,6 +109,9 @@
 }
 .App_logo {
     padding: 50px 120px;
+    @include respond-to(mobile-small) {
+        padding: 35px 0px 20px;
+    } 
 }
 .App_logo:hover {
     color: black;
@@ -110,6 +125,10 @@
     border: 2px dotted;
     margin: auto;
     padding: 2px 0px;
+    @include respond-to(mobile-small) {
+        padding: 2px 2px;
+        margin: 0px 8px;
+    } 
 }
 .App_logo .more_Logo:hover {
    background-color: white;
@@ -127,5 +146,16 @@
     border: 1px solid;
     padding: 25px 0px;
     margin-top: 60px;
-    color: white;
+    border: 1px solid #505050;
+    @include respond-to(mobile-small) {
+       flex-wrap: wrap;
+    } 
 }
+
+@include respond-to(mobile-small) {
+    .last_footer p {
+        padding: 3px 16px;
+        text-align: center;
+        font-size: 15px;
+    }
+ }

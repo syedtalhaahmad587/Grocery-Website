@@ -1,12 +1,17 @@
+@import "../../../../responsive.scss";
+
 .main_wrap {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    @include respond-to(mobile-small) {
+          flex-wrap: wrap;
+    }
 }
 
 
 .wrap_shipping {
-    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    box-shadow: rgb(0, 0, 0 / 10%) 0px 4px 12px;
     margin: 50px 20px 20px 20px;
     width: 200px;
     height: 112px;

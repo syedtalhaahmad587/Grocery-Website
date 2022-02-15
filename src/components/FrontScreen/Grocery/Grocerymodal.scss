@@ -1,3 +1,5 @@
+@import "../../../../responsive.scss";
+
 .hero-grocery {
   position: relative;
     background: rgba(0,21,43,.7);
@@ -11,6 +13,9 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    @include respond-to(mobile-small) {
+      min-height: 500px;
+  }
 }
 
 .GroceryImages {
@@ -21,10 +26,16 @@
     position: absolute;
     inset: 0;
     z-index: -1;    
+    @include respond-to(mobile-small) {
+        background-position: center;
+    }
   }
   
-  .display_block {
+  .Grocery_Text-display_block {
     display: block;
+    @include respond-to(mobile-small) {
+       display: inline-block;
+  }
   }
   .Grocery_Text {
     text-align: center; 
@@ -36,14 +47,18 @@
     text-transform: capitalize;
     color: #fff;
     font-family: manrope,sans-serif;
+    @include respond-to(mobile-small) {
+      font-size: 36px;
+      line-height: 55px;
+      padding: 0px 18px;
+  }
   
   }
   .Grocery_Text p {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     color: #fff;
-    padding-top: 16px;
-    
+    padding: 16px 21px 32px 21px;
   }
   .grocery_input {
      position: relative;
@@ -51,6 +66,9 @@
      margin: 0 auto;
      height: 70px;
      margin-top: 38px;
+     @include respond-to(mobile-small) {
+    margin: 0 15px;
+  }
      /* border: 1px solid #fffou; */
     
   }

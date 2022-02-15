@@ -1,8 +1,11 @@
-
+@import "../../../../responsive.scss";
 
 .food_zone {
     text-align: center;
     padding: 4rem 0rem;
+    @include respond-to(mobile-small) {
+      padding: 3rem 0rem 2rem;
+    }
 }
 
 .food_zone h1 {
@@ -10,12 +13,22 @@
     font-size: 30px;
     color: #00152b;
     font-family: 'Manrope', sans-serif;
+    @include respond-to(mobile-small) {
+      font-size: 34px;
+      line-height: 42px;
+  
+    }
 }
 .food_zone p {
   font-size: 16px;
   color: #848484;
   font-family: 'Manrope', sans-serif;
   padding-top: 13px;
+  @include respond-to(mobile-small) {
+    font-size: 20px;
+    line-height: 28px;
+
+  }
 
 }
 .display {
@@ -102,5 +115,12 @@
   align-self: center;
   cursor: pointer;
   outline: none;
+  
+}
+
+.qoLPS {
+  @include respond-to(mobile-small) {
+    margin: 0px 18px;
+  } 
 }
   

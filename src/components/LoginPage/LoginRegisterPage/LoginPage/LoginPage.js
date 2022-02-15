@@ -14,8 +14,10 @@ const LoginPage = () => {
     password : "",
   }
   const [obj  , setobj ] = useState(initailState);
+
+
   
-  const { currentUser } = useSelector((obj) => obj.user);
+  const { user : { currentUser } } = useSelector((state) => state);
   useEffect(() => {
     if(currentUser) {
         navigate("/");
@@ -32,7 +34,7 @@ const LoginPage = () => {
     if(!obj.email || !obj.password ){
       return;
     }
-    dispatch(loginInitiate(obj.email, obj.password ))
+    dispatch(loginInitiate(obj))
     setobj(initailState)
   }
 
