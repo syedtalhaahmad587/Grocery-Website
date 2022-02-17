@@ -1,5 +1,5 @@
 import React from "react"
-import "./AboutGrocery.css"
+import "./AboutGrocery.scss"
 import { MdKeyboardArrowRight } from "react-icons/md"
 
 
@@ -22,7 +22,7 @@ const Grocery_screens = (props) => {
               <h1 className={`Abouts_Us_screen ${className ? className : "default" }`}  >{"About Us" ? heading : "" }</h1>
                 <div className={`grocery_about ${gr_pera}`} >
                      <p>Home</p>
-                     <span><MdKeyboardArrowRight /></span>
+                     <span className="keyboard-svg"><MdKeyboardArrowRight /></span>
                      <p>{"Product Details" ? Userheading : "" }</p>       
                   </div>                     
                 </div>

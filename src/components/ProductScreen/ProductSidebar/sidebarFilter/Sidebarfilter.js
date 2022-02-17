@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Sidebarfilter.css"
+import "./Sidebarfilter.scss"
 import ProductList from "../../../FrontScreen/DealOffer/ProductList";
 import Dropdown from "../../../Dropdown/Dropdown"
 import list from '../../../FrontScreen/DealOffer/ProductListApi'

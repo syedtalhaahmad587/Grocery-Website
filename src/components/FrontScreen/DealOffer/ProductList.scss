@@ -1,23 +1,25 @@
 @import "../../../../responsive.scss";
 
 .row {
-    padding: 3rem 200px 3rem 200px;
+    margin: 3rem 200px 3rem 200px;
     z-index: 100;
     position: relative;
+    @include respond-to(laptop-small) { 
+        margin: 3rem 70px 3rem 70px;
+    }
+    @include respond-to(tablet-s) { 
+        text-align: center;
+        padding: 0px;
+        margin: 30px 0px;
+
+    }
     @include respond-to(mobile-small) {
-        // padding: 3rem 5rem 3rem 5rem;
         z-index: 100;
         position: relative;
-        // display: flex;
-        flex-direction: column;
-        flex-basis: 100;
-        flex-basis: 100%;
-        flex-wrap: wrap;
         width: 100%; 
         max-width: 100%;
-        padding: 25px 0px;
+        margin: 30px 0px;
         text-align: center;
-        // margin: 0rem 5.4rem;
     }
 }
 
@@ -29,6 +31,10 @@
     display: inline-grid !important;
     width: 25%;
     padding: 16px 16px;
+    @include respond-to(tablet-s) { 
+        display: inline-table !important ;
+
+     }
     @include respond-to(mobile-small) {
         display: inline-table !important ;
         margin: auto;
@@ -111,8 +117,9 @@
 .product_sidebar {
   display: flex;
   flex-wrap: wrap;
+  margin: 3rem 72px 3rem 72px;
   /* padding: 25px 312px 0px calc((100% - (292px * 3)) / 2) !important; */
-  padding: 25px 20px 0px calc((100% - (198px * 3)) / 2) !important;
+//   padding: 25px 20px 0px calc((100% - (198px * 3)) / 2) !important;
 
 }    
 

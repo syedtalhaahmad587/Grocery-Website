@@ -10,6 +10,12 @@
 .footer {
     display: flex;
     justify-content: space-evenly;
+    @include respond-to(tablet-s) {
+        flex-wrap: wrap;
+        padding: 0px 7rem;
+        justify-content: space-between;
+        flex-direction: column;
+   }
     @include respond-to(mobile-small) {
         flex-wrap: wrap;
         padding: 0px 10px;
@@ -72,6 +78,9 @@
 .EG_shops {
     position: relative;
     text-align: center;
+    @include respond-to(tablet-s) {
+        text-align: start;
+   }
     @include respond-to(mobile-small) {
         text-align: start;
    }
@@ -94,6 +103,9 @@
     color: white;
     margin: 0px 35px;
     margin: 0px;
+    @include respond-to(tablet-s) {
+        width: 80%;
+   }
     @include respond-to(mobile-small) {
      width: 80%;
     }
@@ -104,12 +116,18 @@
     padding: 9px 16px;
     outline: none;
     border: none;
-    right: 35px;
+    right: 3px;
     background-color: var(--them_color);
+    @include respond-to(tablet-s) {
+        right: 118px;
+    }
 }
 .App_logo {
     padding: 50px 120px;
     @include respond-to(mobile-small) {
+        padding: 35px 0px 20px;
+    } 
+    @include respond-to(tablet-s) {
         padding: 35px 0px 20px;
     } 
 }
@@ -126,6 +144,10 @@
     margin: auto;
     padding: 2px 0px;
     @include respond-to(mobile-small) {
+        padding: 2px 2px;
+        margin: 0px 8px;
+    } 
+    @include respond-to(tablet-s) {
         padding: 2px 2px;
         margin: 0px 8px;
     } 
@@ -150,6 +172,10 @@
     @include respond-to(mobile-small) {
        flex-wrap: wrap;
     } 
+    @include respond-to(tablet-s) {
+        flex-direction: column;
+        text-align: center;
+     } 
 }
 
 @include respond-to(mobile-small) {
@@ -157,5 +183,15 @@
         padding: 3px 16px;
         text-align: center;
         font-size: 15px;
+    }
+ }
+ @include respond-to(tablet-s) {
+    .last_footer p {
+        padding: 3px 16px 14px 16px ;
+        text-align: center;
+        font-size: 15px;
+    }
+    .display_block {
+        display: contents;
     }
  }

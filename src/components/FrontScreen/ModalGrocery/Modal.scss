@@ -3,9 +3,9 @@
 .food_zone {
     text-align: center;
     padding: 4rem 0rem;
-    @include respond-to(mobile-small) {
-      padding: 3rem 0rem 2rem;
-    }
+    // @include respond-to(mobile-small) {
+    //   padding: 3rem 0rem 2rem;
+    // }
 }
 
 .food_zone h1 {
@@ -36,10 +36,13 @@
 }
 
 .App {
+  
+  
     font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px 15px;
   }
 
 .slider_style {    
@@ -118,9 +121,10 @@
   
 }
 
-.qoLPS {
-  @include respond-to(mobile-small) {
-    margin: 0px 18px;
-  } 
-}
+// .qoLPS {
+//   @include respond-to(mobile-small) {
+//     margin: 0px 18px;
+//   } 
+// }
+
   

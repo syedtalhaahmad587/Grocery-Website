@@ -1,5 +1,5 @@
 import React from "react";
-import "./Grocerymodal.scss"
+import "./Grocerymodal.scss";
 
 const Grocery = (props) => {
 

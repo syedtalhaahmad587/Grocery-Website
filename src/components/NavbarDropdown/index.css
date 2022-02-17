@@ -21,7 +21,26 @@
     transition: .5s ease;
     z-index: 9;
   }
-  
+  .navbr-list {
+    padding: 7px 0px;
+  }
+  .navbr-list li {
+    border-bottom: 1px solid rgba(0,0,0,.09);
+    padding-bottom: 8px;
+    color: #00152b;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    font-weight: 500;
+    font-family: work sans,sans-serif;
+    text-transform: capitalize;
+  }  
+  .navbr-list li :last-child {
+    border-bottom: none;
+  }  
+  .navbr-list li:hover {
+    color: none;
+  }
+ 
   .dropdown-content a {
     color: black;
     padding: 12px 16px;

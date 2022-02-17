@@ -3,11 +3,21 @@
 .row_wrap {
     display: flex;
     margin: 30px 150px 0px 150px;
+    @include respond-to(laptop-small) { 
+        display: flex;
+        margin: 30px 130px 0px 130px;
+        flex-direction: column;
+    }
+     @include respond-to(tablet-s) { 
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px 15px;
+    }
     @include respond-to(mobile-small) {
         flex-direction: column;
         flex-wrap: wrap;
         flex-basis: 100%;
-        margin: 0px;
+        margin: 0px 15px;
     }
 }
 .row_wrap2 {
@@ -15,6 +25,9 @@
     padding: 14px 14px;
     border-radius: 5px;
     border: 1px solid #eee;
+    @include respond-to(tablet-s) {
+        margin: 20px 0px;
+}
 }
 .row_wrap2:hover {
     border: 1px solid #fff;
@@ -30,14 +43,10 @@
    }
 }
 .wrap img {
-    width: 450px;
+    // width: 450px;
     height: 250px;
     margin-bottom: -4px;
-    @include respond-to(mobile-small) {
-         width: 100%;
-
-    }
-
+    width: 100%;
 }
 .succes_store {
    background-color: #00142c;

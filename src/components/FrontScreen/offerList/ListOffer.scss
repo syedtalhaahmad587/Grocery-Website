@@ -7,6 +7,18 @@
     margin: 30px 0px;  
         padding: 30px 20px; 
         color: white;
+        @include respond-to(laptop) { 
+          display: flex;
+          flex-wrap: wrap;
+      }
+        @include respond-to(laptop-small) { 
+           display: flex;
+           flex-wrap: wrap;
+       }
+        @include respond-to(tablet-s) { 
+           grid-template-columns: none;
+
+        }
         @include respond-to(mobile-small) {
            display: flex;
            flex-direction: column;
@@ -28,11 +40,15 @@
       margin: auto;
       padding: 20px 20px;
       overflow: hidden;
+      @include respond-to(tablet-s) {
+        width: 100%;  
+    }
       @include respond-to(mobile-small) {
              width:100%;
              overflow: hidden;
 
       }
+    
   }
   .backGround_1 p {
       width: 250px;
@@ -60,6 +76,9 @@
       background-size: 100% 100%;
       margin: auto;
       padding: 20px 20px;
+      @include respond-to(tablet-s) {
+        width: 100%;  
+    }
       @include respond-to(mobile-small) {
         width:100%;
         overflow: hidden;
@@ -91,6 +110,17 @@
       background-size: 100% 100%;
       margin: auto;
       padding: 20px 20px;
+      @include respond-to(laptop) { 
+        margin: 24px auto;
+        
+    }
+      @include respond-to(laptop-small) { 
+        margin: 24px auto;
+        
+    }
+      @include respond-to(tablet-s) {
+        width: 100%;  
+    }
       @include respond-to(mobile-small) {
         width:100%;
         overflow: hidden;

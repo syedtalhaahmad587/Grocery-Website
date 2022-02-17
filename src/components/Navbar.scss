@@ -12,9 +12,7 @@
     position: fixed;
     width: 100%;
     z-index: 200;    
-    height: 60px;  
-   
-    
+    height: 60px;     
 }
 .vertically_bottom__navbar-Row {
     display: none;
@@ -23,9 +21,51 @@
     display: none;
     
 }
+@include respond-to(tablet-s) {
+    .main_navbar {
+          display: none;
+    }
+    .mobile-menu-btn {
+        position: relative;
+        -webkit-transition: .4s ease;
+        transition: .4s ease;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .fv-bold {
+        font-weight: 700!important;
+    }
+    .vertically {
+        display: visible;
+         position: fixed;
+         max-width: 100%;
+         width:  100%;
+         padding: 8px 30px;
+         background: #ffffff;
+         box-shadow: 4px 8px 30px rgb(141, 141, 141 );
+        z-index: 300; 
+       &__navigateNavbar {
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+       }
+   }
+    
+}
+
 @include respond-to(mobile-small) {
     .main_navbar {
         display: none;
+    }
+    .mobile-menu-btn {
+        position: relative;
+        -webkit-transition: .4s ease;
+        transition: .4s ease;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .fv-bold {
+        font-weight: 700!important;
     }
     .vertically {
          display: visible;
@@ -99,15 +139,29 @@
 .un_orderlist li :hover {
   color: var(--them_color);
 }
-
+.Navbar-logo {
+    @include respond-to(tablet-s) {
+        padding-left: 6rem;
+     }
+}
 .un_orderlist1 {
     display: flex;
     margin: 0px 25px 0px 0px;
+    @include respond-to(tablet-s) {
+        margin-right: -35px;
+        margin-left: 35px;
+     }
    
 } 
 .un_orderlist1 li {
     list-style: none;
     padding: 0px 0px 0px 24px;
+    @include respond-to(tablet-s) {
+        padding-left: 12px;
+    padding-right: 12px;
+
+     }
+    
 }
 .Fi_phone {
     font-size: 30px;
@@ -128,6 +182,9 @@
     outline: none;
     width: 650px;
     margin: 0px 35px;
+    @include respond-to(laptop-small) {
+          width: 335px;
+    }
 }
 .search_flex .search_header button {
     position: absolute;
@@ -211,7 +268,7 @@
     height: 60px;  
 }   
 .About_navbar .flex_3 {
-    margin-top: 7px;
+    margin-top: 2px;
 }
 .About_navbar .Fi_phone {
     font-size: 24px;

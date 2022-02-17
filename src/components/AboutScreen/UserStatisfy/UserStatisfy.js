@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import statisfy from "./Api";
-import "./UserStatisfy.css";
+import "./UserStatisfy.scss";
 import Scrool_Bar from "../../UseScroll/Scroll"
 
 const UserStatisfy = () => {
@@ -14,9 +14,8 @@ const UserStatisfy = () => {
               <h3>Why Choose Us</h3>
               </div>
               <div className="User_Satisfy">
-                  {
-                      data.map((item , index ) => {
-                          const {id, logo , point , text , btn } = item; 
+                  { data.map((item , index ) => {
+                    const {id, logo , point , text , btn } = item; 
                           return (
                               <>
                                   <div className="User_Satisfy_item" key={index}>
@@ -24,15 +23,14 @@ const UserStatisfy = () => {
                             <p className="logo_section">{logo}</p>
                             <h4 className="heading_section" >{point}</h4>
                             <p className="pera_section">{text}</p>
-                            <button className="button-section" ><Scrool_Bar showBelow={250} title={btn} /></button> 
+                            <button className="button-section">
+                                <Scrool_Bar showBelow={250} title={btn} /></button> 
                             </div> 
-                              </div>
+                            </div>
                               </>
                           )
-                       
                       } )
                   }
-                  
               </div>
           </div> 
           

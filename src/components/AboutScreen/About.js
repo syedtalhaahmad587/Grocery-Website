@@ -10,15 +10,11 @@ const AboutPage = () => {
    return (
        <>
        <Navbar className="About_navbar"/>
-        <Grocery_screens  heading="About Us" Userheading="About Us"  />
-        <Customer />
-        <UserStatisfy />
-        <div>
+       <Grocery_screens  heading="About Us" Userheading="About Us" />
+       <Customer />
+       <UserStatisfy />
         <Delivery  className="delivery_authoritizes"/>
-        </div>
-        <div>
-        <Footer />
-        </div>
+       <Footer /> 
        </>
    )
 }

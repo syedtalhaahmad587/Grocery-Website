@@ -20,35 +20,35 @@ const Layout = () => {
                seachIcon={true}
                About_navbar={false} 
             />
-            {/* <div>
+             <div>
               <Grocery />
-              </div> */}
-               {/* <div>
+              </div> 
+               <div>
             <Modal />
-            </div> */}
-             {/* <div>
+            </div>
+             <div>
                 <ProductList list={list} />
-            </div> */}
+            </div>
             
-            {/* <div>
+            <div>
                 <ShowOffer />
 
-            </div> */}
+            </div>
             
-            {/* <div>
+            <div>
                 <ProductList list={list} />
-            </div> */}
+            </div>
             
-            {/* <div>
+            <div>
                 <PublicNews />
-            </div> */}
+            </div>
             
-            {/* <div>
+            <div>
                 <Delivery />
-            </div> */}
-            {/* <div>
+            </div>
+            <div>
                 <Footer />
-            </div>  */}
+            </div> 
 
         </>
     )

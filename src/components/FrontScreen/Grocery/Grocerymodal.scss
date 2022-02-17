@@ -33,12 +33,24 @@
   
   .Grocery_Text-display_block {
     display: block;
+    @include respond-to(laptop-small) {
+      display: contents;
+ }
     @include respond-to(mobile-small) {
-       display: inline-block;
+       display: contents;
   }
+  @include respond-to(tablet-s) {
+    display: contents;
+}
   }
   .Grocery_Text {
     text-align: center; 
+    @include respond-to(mobile-small) {
+      margin: 0 15px;
+    }
+    @include respond-to(tablet-s) {
+      margin: 0 15px;
+    } 
   } 
   .Grocery_Text h2 {
     font-weight: 800;
@@ -47,10 +59,20 @@
     text-transform: capitalize;
     color: #fff;
     font-family: manrope,sans-serif;
+    margin: 0px auto !important ;
+    @include respond-to(tablet-s) {
+      padding: 0 24px !important ;
+      font-size: 48px !important ;
+     }
+    @include respond-to(laptop-small) {
+      padding: 0 120px;
+      font-size: 48px;
+     }
     @include respond-to(mobile-small) {
       font-size: 36px;
       line-height: 55px;
       padding: 0px 18px;
+      margin: 0px auto !important ;
   }
   
   }
@@ -59,6 +81,11 @@
     font-size: 22px;
     color: #fff;
     padding: 16px 21px 32px 21px;
+    @include respond-to(tablet-s) {
+    font-size: 24px;
+    color: #fff;
+    padding: 16px 0px 32px 0px;
+    }
   }
   .grocery_input {
      position: relative;
@@ -66,10 +93,8 @@
      margin: 0 auto;
      height: 70px;
      margin-top: 38px;
-     @include respond-to(mobile-small) {
-    margin: 0 15px;
-  }
-     /* border: 1px solid #fffou; */
+   
+  /* border: 1px solid #fffou; */
     
   }
   

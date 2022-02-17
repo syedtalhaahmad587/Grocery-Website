@@ -1,5 +1,5 @@
 import React from "react";
-import "./Customer.css"
+import "./Customer.scss"
 import business from "../../../assets/bussiness.jpg"
 import original from "../../../assets/customer_logo.png"
 import guarantee from "../../../assets/customer_wrant.png"

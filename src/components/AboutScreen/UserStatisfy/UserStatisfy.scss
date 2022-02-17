@@ -1,0 +1,122 @@
+@import "../../../../responsive.scss";
+
+.User_Satisfy {
+    padding: 0px 50px 0px 50px;
+    z-index: 100;
+    position: relative;   
+    -webkit-transition: all .3s;
+    transition: all .3s; 
+    font-family: manrope,sans-serif;
+    @include respond-to(tablet-s){ 
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+       flex-wrap: wrap;
+       margin: 0px 15px;
+    }
+    @include respond-to(laptop-small){ 
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+       flex-wrap: wrap;
+       margin: 0px 15px;
+    }
+
+}
+.User_Satisfy:hover {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+
+
+.User_Satisfy_item  {
+    display: inline-grid;
+    width: 25%;
+    padding: 16px 16px;
+   
+    @include respond-to(mobile-small){
+          display: flex !important;
+          flex-wrap: wrap !important;
+          width: 100%;
+    }
+    @include respond-to(tablet-s){
+        flex: 0 0 auto;
+       width: 33.33333333%;
+       padding: 10px 10px;
+  }
+  @include respond-to(laptop-small){ 
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    padding: 10px 10px;
+}
+}
+
+.User_Satisfy_item-detail {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 24px 20px;
+        text-align: center;
+        background-color: #ffffff;
+        height: auto;
+}
+.User_Satisfy_item-detail .logo_section {
+    padding-bottom: 5px;  
+    color: var(--them_color);
+    @include respond-to(tablet-s) {
+         font-size: 28px;
+    }
+    @include respond-to(laptop-small) {
+        font-size: 28px;
+   }
+}
+.User_Satisfy_item-detail .heading_section {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #00152b;
+}
+.User_Satisfy_item-detail .pera_section {
+     color: #848484;
+     padding-bottom: 5px;
+     font-size: 1rem;
+     line-height: 1.4;
+     @include respond-to(mobile-small) {
+        font-size: 1rem;
+        padding: 0 37px;
+        line-height: 1.5;
+        line-height: 1.4;
+     }
+}
+.User_Satisfy_item-detail .button-section {
+      border: none;
+      background: none;
+      font-size: 14px; 
+    font-weight: 600;
+    color: #505050;
+}
+
+.button-section:hover {
+    color: var(--them_color);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: manrope,sans-serif;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+    border-bottom: 1px solid;           
+    border-color: var(--them_color);
+
+}
+
+.fresh_food {
+    text-align: center;
+
+}
+.fresh_food p {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.fresh_food h3 {
+    margin-bottom: 25px; 
+    font-size: 30px;  
+}
+
+
