@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./index.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const NavbarDropdown = ({ dropLink , dropDownData , href_link }) => {
+const NavbarDropdown = ({ dropLink , dropDownData , href_link  , item }) => {
 
   const [dropVisible , setDropVisible ] = useState(false);
   return (
@@ -19,9 +19,10 @@ const NavbarDropdown = ({ dropLink , dropDownData , href_link }) => {
         <div class="dropdown-content">
            {dropDownData.map((item , index ) => 
                     <ul className="navbr-list">
-                  <a href={href_link} ><li key={index}>{item}</li></a>
+                  <a href={item.href_link}>
+                    <li key={index}>{item.item}</li></a>  
                   </ul>
-            )}
+            )}    
         </div>
         :null }
       </div>

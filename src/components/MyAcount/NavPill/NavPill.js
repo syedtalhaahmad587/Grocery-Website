@@ -1,6 +1,6 @@
 import React , {useState}  from "react";
 import { AiOutlineUser, AiOutlineLogout , AiFillShopping , AiOutlineDashboard  } from "react-icons/ai";
-import "./NavPill.css";
+import "./NavPill.scss";
 import profile from "../../../assets/AboutImage.jpg";
 import Dropdown from "../../Dropdown/Dropdown";
 

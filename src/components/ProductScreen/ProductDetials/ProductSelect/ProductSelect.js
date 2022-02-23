@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductSelect.css"
+import "./ProductSelect.scss"
 import ReactStars from "react-rating-stars-component";
 import Scrool_Bar from "../../../UseScroll/Scroll"
 // import  Pear from "ProductImages/Pear_vegetable.jpg"
@@ -16,13 +16,13 @@ const ProductSelect = (props) => {
           <div className="Select_Product" >
              <div className="Select_image">
                  <div className="choose_img" >
-                     <div>
+                     <div className="check-gorcery-food" >
                       <img src={`${window.location.origin}/${details.image}`} width="70px" height="70px" />
                      </div>
-                     <div>
+                     <div className="check-gorcery-food" >
                      <img src={`${window.location.origin}/${details.image1}`} width="70px" height="70px"  />
                      </div>
-                     <div>
+                     <div className="check-gorcery-food" >
                      <img src={`${window.location.origin}/${details.image2}`} width="70px" height="70px"  />
                      </div>
                  </div>
@@ -52,7 +52,9 @@ const ProductSelect = (props) => {
                     </div>
                     <h1>{details.text}</h1>
                     <h4>$41.36</h4>
-                    <span></span>
+                    <p>RIBCAGE STR ANK RAINBOW - B lue High-rise straight-leg jeans
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua.</p>
                     <p>{details.describtion}</p>
                         <div className="display_flex  product_order" >
                           <div className="cart_count" >

@@ -1,12 +1,24 @@
+@import "../../../../responsive.scss";
 .yn-container {
     display: flex;
     justify-content: center;
-    margin: 4rem 0rem;
+    flex-wrap: wrap;
+    margin: 4rem 15px;
+//     @include respond-to(mobile-small) {
+//         flex-wrap: wrap;
+//    }
+    @include respond-to(mobile) {
+         flex-wrap: wrap;
+    }
+    @include respond-to(tablet) {
+        flex-wrap: wrap;
+   }
+   @include respond-to(laptop-extra-s) {
+}
 }
 .egh-acount {
     display: flex;
     flex-wrap: wrap;
-    
     flex-direction: column!important;
     margin-right: 1rem!important;
 }
@@ -18,8 +30,7 @@
    background: white;
    color: #848484;
    background: #fff;
-   -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
-   box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+   box-shadow: 4px 8px 30px rgb(141, 141, 141);
    transition: .3s ease;
    width: 100%;
    border: 1px solid #fff ;
@@ -39,32 +50,86 @@
 .egh-details {
     display: flex;
     margin: 0px 32px;
+    @include respond-to(mobile-small){
+        flex-direction: column;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    @include respond-to(mobile){
+        // flex-direction: column;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        width: auto;
+        max-width: 100%;
+        margin: 0px 50px;
+    }
+    @include respond-to(tablet){
+        // flex-direction: column;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        width: auto;
+        max-width: 100%;
+        margin: 0px 50px;
+    }
+    
 }
 
 .egh-details p {
    text-align: center;
    color: black;
+   @include respond-to(mobile) {
+       font-size: 25px;
+   }
+   @include respond-to(tablet) {
+    font-size: 25px;
+}
+   
+
 }
 .pc-details {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    box-shadow: 4px 8px 30px rgb(141, 141, 141,);
     flex-direction: column;
     margin-left: 1.5rem;
     height: 330px;
     padding-bottom: 4rem;    
     width: 800px;
+    @include respond-to(mobile){
+        margin: 0px 15px;
+        padding: 24px;
+        height: auto;
+    }
+    @include respond-to(tablet){
+        margin: 0px 15px;
+        padding: 24px;
+        height: auto;
+    }
 }
 
 .pi-details {
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    box-shadow: 4px 8px 30px rgb(141, 141, 141,);
     padding: 35px 50px;
     text-align: center;
     margin-right: 12px;
     margin-left: 12px;
     border-radius: 4px;
-
+    @include respond-to(mobile-small) {
+        // margin-bottom: 20px;
+        padding: 40px 12px;
+        margin: 20px 0px;
+    }
+    @include respond-to(mobile) {
+        padding: 40px 55px;
+        margin: 20px auto;
+    }
+    @include respond-to(tablet){
+        padding: 40px 55px;
+        margin: 20px auto;
+    }
+   
 }
 .pi-details .nm-pi {
     font-size: 30px;
@@ -80,10 +145,18 @@
     margin-bottom: -2px;
 }
 .Profile {
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    box-shadow: 4px 8px 30px rgb(141 , 141 , 141 );
     flex-direction: column;
     margin-left: 1.5rem;
     width: 800px;
+    height: 350px;
+
+    @include respond-to(mobile) {
+        margin: 0px 15px;
+    }
+    @include respond-to(tablet) {
+        margin: 0px 15px;
+    }
 }
 .Profile h3 {
     margin-top: 30px;
@@ -92,11 +165,11 @@
 .profile-area {
     padding: 50px 40px;
     border-radius: 5px;
+    
 }
 
 .box--shadow {
-    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+    box-shadow: 4px 8px 30px rgb(141 , 141 , 141 );
 }
 
 .mb-50 {
@@ -122,16 +195,32 @@
     align-items: center;
     margin-left: 12px;
     margin-top: 12px;
+    @include respond-to(mobile) {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    @include respond-to(tablet) {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
 }
 .le-profile {
     margin-left: 18px;
+    @include respond-to(mobile) {
+        margin: 0px;
+    }
+    @include respond-to(tablet) {
+        margin: 0px;
+    }
 }
 
 .le-profile button  {
     padding: 8px 36px;
     color: black;
     background: #fff;
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
+    box-shadow: 4px 8px 30px rgb(141 , 141 , 141);
     border: 1px solid #fff;
     margin-right: 12px; 
 }
@@ -148,21 +237,29 @@
     border-radius: 80px;
 }
 .row_profile {
-    /* --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0; */
     margin: 30px 12px;
-    /* margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -.5);
-    margin-left: calc(var(--bs-gutter-x) * -.5); */
 }
 .col_12  {
    display: flex;
+   @include respond-to(mobile) {
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   @include respond-to(tablet) {
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
 }
 
 .col_6 {
      margin-right: 12px;
      margin-left: 12px;
-     
+     @include respond-to(mobile) {
+        margin: 0px;   
+     }
+     @include respond-to(tablet) {
+        margin: 0px;   
+     }
 }
 .col-12 {
     flex: 0 0 auto;
@@ -255,20 +352,23 @@
     font-weight: 600;
     cursor: pointer;
 }
-/* .form-inner_user select option {
-    padding: 12px 0px;
-} */
 
 .egr-table {
     width: 700px;
     border-collapse: collapse;
     overflow: hidden;
-    margin: 4rem 3rem 0rem 3rem;
+    margin: 3rem 3rem 3rem 3rem;
+}
+.table {
+
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
 }
 
-.mb-0 {
-    margin-bottom: 0!important;
-}
+// .mb-0 {
+//     margin-bottom: 0!important;
+// }
 
 .egr-table thead {
     background: #fff;
@@ -318,9 +418,15 @@ element.style {
 .eg_cards {
     padding: 30px;
     border-radius: 5px;
-    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 15%);
-    height: 260pxz;
+    box-shadow: 4px 8px 30px rgb(141 , 141 , 141 ,);
+    height: 260px;
+    margin: 0px 5px;
+    @include respond-to(mobile) {
+        margin: 10px 0px;
+    }
+    @include respond-to(tablet) {
+        margin: 10px 0px;
+    }
 }
 
 .eg_cards p {
@@ -333,5 +439,16 @@ element.style {
 }
 .Yr-acount {
     margin-left: 1.5rem !important;
-    width: 800px;
+    @include respond-to(mobile) {
+         flex-direction: column;
+         flex-wrap: wrap;
+         width: 100%;
+         margin: 0px 15px !important;
+    }
+    @include respond-to(tablet) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px 15px !important;
+   }
 }

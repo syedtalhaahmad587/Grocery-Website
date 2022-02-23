@@ -1,5 +1,5 @@
 import   React , { useLayoutEffect , useState  } from "react";
-import "./Productdetail.css"
+import "./Productdetail.scss"
 import Navbar from "../../Navbar"
 import Grocery_screens from "../../AboutScreen/ModalGrocerys/AboutGrocery";
 import ProductSelect from "./ProductSelect/ProductSelect"
@@ -28,8 +28,8 @@ const ProductDetail = () => {
             gr_pera="Product_details"
             heading="Product Details" Userheading="Product Details"/>
              <ProductSelect details={detail} />
-             <OverView />
-             <ProductList list={viewitem} isRelated_product={true} related_heading={true} related_product_item= "related_product_items"  />
+              <OverView />
+            <ProductList list={viewitem} isRelated_product={true} related_heading={true} related_product_item= "related_product_items"  />
             <Footer />
        </> 
    )

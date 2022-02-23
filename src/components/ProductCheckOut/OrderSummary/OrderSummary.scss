@@ -1,3 +1,4 @@
+@import "../../../../responsive.scss";
 .pb-100 {
     padding-bottom: 100px;
 }
@@ -19,12 +20,24 @@
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
+    @include respond-to(mobile-small) {
+        flex-direction: column;
+    }
+    @include respond-to(tablet) {
+        width: 100%;
+    }
    
 }
 
 .col-lg-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
+    @include respond-to(mobile-small) {
+        width: 100%;
+    }
+    @include respond-to(tablet) {
+        width: 100%;
+    }
 }
 
 .row_billing>* {
@@ -42,8 +55,8 @@
 }
 
 .box--shadow {
-    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+    // -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+    box-shadow: 4px 8px 30px rgb(141 , 141 , 141 );
 }
 
 .mb-30 {
@@ -65,6 +78,12 @@
 .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+    @include respond-to(mobile-small) {
+        width: 100%;
+    }
+    @include respond-to(tablet) {
+        width: 100%;
+    }
 }
 
 .col-12 {
@@ -74,6 +93,12 @@
 .col-md-6 {
     flex: 0 0 auto;
     width: 50%;
+    @include respond-to(mobile-small) {
+        width: 100%;
+    }
+    @include respond-to(tablet) {
+        width: 100%;
+    }
 }
 
 .col-12 {
@@ -84,11 +109,23 @@
 .col-lg-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
+    @include respond-to(mobile-small) {
+        width: 100%;
+    }
+    @include respond-to(tablet) {
+        width: 100%;
+    }
 }
 
 .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
+    @include respond-to(mobile-small) {
+        width: 100%;
+    }
+    @include respond-to(tablet) {
+        width: 100%;
+    }
 }
 .added-product-summary {
     border: 1px solid #eee;
@@ -222,15 +259,14 @@ ul {
 .added-product-summary .delete-btn {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
     right: 10px;
+    font-size: 30px;
 }
 .added-product-summary .delete-btn i {
     padding: 5px;
     background: #fff;
-    -webkit-box-shadow: 0 0 12px rgb(0 0 0 / 10%);
-    box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+    // -webkit-box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 12px;
     color: #848484;
     border-radius: 50%;
     -webkit-transition: .3s ease;

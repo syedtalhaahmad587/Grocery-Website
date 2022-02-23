@@ -9,18 +9,12 @@ import { useSelector } from "react-redux";
 import { useLocation, useParams } from 'react-router-dom';
 // import { Location } from "react-router-dom";
 const ProductCarts = () => {
-    // const location = useLocation()
-    // console.log(location)
-    // console.log(params.cartItem);
-   
    return (
        <>
        <Navbar />
-       
        <Grocery_screens  heading="Cart" Userheading="Cart" gr_pera="cart_info" />
-       < CartTable />
-       <Coupon />
-
+       <CartTable />
+       {/* <Coupon /> */}
        <Footer />
        </>
    )

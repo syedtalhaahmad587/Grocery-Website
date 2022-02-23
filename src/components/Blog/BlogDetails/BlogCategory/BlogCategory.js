@@ -1,5 +1,5 @@
 import React , {useState}  from "react";
-import "./BlogCategory.css";
+import "./BlogCategory.scss";
 import { BsArrowRight } from "react-icons/bs";
 import { FaFacebookF , FaInstagramSquare , FaTwitter  } from "react-icons/fa";
 import { ImPinterest   } from "react-icons/im";
@@ -44,7 +44,7 @@ const BlogCategory = () => {
                         adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
                          magnam aliquam quaerat voluptatem."</p>
                </div>
-               <div className="grocery-demaen">
+               <div className="grocery-demaen grocery-vines ">
                    <div className="popup-video">
                    <video controls>
                 <source src={grocery} />
@@ -104,11 +104,11 @@ const BlogCategory = () => {
                     <h1>Leave A Comment</h1>
                      <p className="view_pera" >Your email address will not be published. Required fields are marked *</p>
                      <div className="display_flex veiw_details_feilds">
-                         <div className="veiw_details_input1">
+                         <div className="veiw_details_input1 blog-input">
                          <label> Your Name </label> 
                          <input  placeholder="Your Name" type="text"/>
                          </div>
-                         <div className="veiw_details_input2" >
+                         <div className="veiw_details_input2 blog-input">
                          <label>Email </label> 
                          <input placeholder="Your email" type="text" />
                          </div>

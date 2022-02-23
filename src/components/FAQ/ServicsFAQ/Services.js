@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Services.css"
+import "./Services.scss"
 import TextDropdown from "../../DropdownText/TextDropdown";
 
 const Services = () => {
@@ -46,30 +46,30 @@ const Services = () => {
 </div>
 <div className=" mb-43">
 <div className="faq-wrapper">
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." 
+<TextDropdown  accordion_background="accordion_background" drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." 
 drop_text="How to remove the impurities of Graphene oxide?"  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown  accordion_background="accordion_background" drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 How long will delivery take?"  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown accordion_background="accordion_background"  drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 MRI compatible touch tablet?"  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown accordion_background="accordion_background"  drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 Questionnaire on online shopping behavior during COVID-19."  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown accordion_background="accordion_background"  drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 Tellus ridicdiam eleifend id ullamcorper?"  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown  accordion_background="accordion_background" drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 Questionnaire on online shopping behavior during COVID-19."  />
 <div className="section_title7 text-start">
 <h2>Payment FAQ’s</h2>
 </div>
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown accordion_background="accordion_background"  drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 MRI compatible touch tablet?"  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown accordion_background="accordion_background"  drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 How to remove the impurities of Graphene oxide?"  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown accordion_background="accordion_background" drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 How long will delivery take?"  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown accordion_background="accordion_background"  drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 Questionnaire on online shopping behavior during COVID-19."  />
-<TextDropdown drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
+<TextDropdown accordion_background="accordion_background"  drop_pera="Discover, Explore & Understanding The Product Description Maecenas ullamcorper eros libero, facilisis tempor mi dapibus vel. Sed ut felis ligula. Pellentesque vestibulum, tellus id euismod aliquet, justo velit tincidunt justo, nec pulvinar tortor elit vitae urna." drop_text="
 Tellus ridicdiam eleifend id ullamcorper?"  />
 </div>
 </div>

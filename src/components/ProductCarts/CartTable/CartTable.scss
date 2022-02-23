@@ -1,14 +1,21 @@
+@import "../../../../responsive.scss";
+
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
     margin-bottom: 32px;
     padding: 2rem 6rem;
+    @include respond-to(mobile-small) {
+        padding: 2rem 15px !important ;
+    }
+    @include respond-to(mobile) {
+        padding: 2rem 4rem;
+    }
+
 }
 
 .eg-table {
     width: 100%;
-    border-collapse: collapse;
-    overflow: hidden;
 }
 .cart-table tbody td img {
     width: 54px;
@@ -71,6 +78,10 @@ tbody, td, tfoot, th, thead, tr {
     margin: auto;
     padding: 10px 0px;
     border-radius: 4px;
+    &__count-select-item {
+        float: left;
+        padding: 7px 7px;
+    }
 }
 .quantity-count {
     padding-right: 18px;
@@ -79,6 +90,11 @@ tbody, td, tfoot, th, thead, tr {
     position: absolute;
     margin-left: -15px;
     margin-top: 8px;
+}
+.quantity-nav-bar  {
+    float: right !important ;
+    position: relative;
+    height: 42px;
 }
 .quantity-plus {
     position: absolute;
@@ -120,4 +136,45 @@ tbody, td, tfoot, th, thead, tr {
    font-weight: 400;
     color: #848484;
     font-family: manrope,sans-serif;
+ }
+ .table-mobile {
+     display: flex;
+     justify-content: space-between;
+ }
+ .table-mobile tbody {
+     display: block;
+     width: 100%;
+ }
+ .table-mobile tbody tr{
+     display: block;
+     width: 100%;
+     margin-bottom: 20px;
+    
+ }
+ .table-mobile tbody tr td img {
+     width: 60px;
+     height: 60px;
+ }
+ .table-mobile tbody tr td {
+        display: block;
+        width: 100%;
+        text-align: right;
+        position: relative; 
+        font-weight: 400;
+        color: #848484;
+        border-width: 1px;
+        vertical-align: middle;
+        padding: 15px;
+
+        }
+
+.table-mobile td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    text-align: left;
+    padding-left: 15px;
+    font-weight: 600;
+    color: #00152b;
  }

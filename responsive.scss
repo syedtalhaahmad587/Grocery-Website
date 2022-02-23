@@ -13,6 +13,7 @@ $break-tablet-miniM: 1023px;
 $break-tablet: 1024px;
 $break-tablet-s: 975px;
 $break-laptop-small: 1199px;
+$break-laptop-extra-s: 1240px;
 $break-laptopMini-max: 1439px;
 $break-laptop: 1440px;
 $break-laptop-off: 1440px;
@@ -25,6 +26,7 @@ $break-desktop-largeX: 1897px;
 $break-desktop-largeX-off: 1898px;
 $break-desktop-extra-large: 2048px;
 $break-desktop-ultra-large: 2240px;
+
 
 // media query mixins
 @mixin respond-to($media) {
@@ -146,6 +148,11 @@ $break-desktop-ultra-large: 2240px;
   } @else if $media == tablet-miniS {
     @media only screen and (max-width: $break-tablet-miniS) {
       @content;
+    } 
+   } @else if $media == laptop-extra-s {
+      @media only screen and (max-width: $break-laptop-extra-s) {
+        @content;
+      }
     }
-  }
+  
 }

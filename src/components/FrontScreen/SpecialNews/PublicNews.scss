@@ -37,9 +37,8 @@
     width: 130px;
     height: 130px;
     @include respond-to(mobile-small) {
-        width: 150px;
-        height: 150px;
-
+      width: 150px;
+      height: 150px;
    }
 }
 .wrap img {

@@ -1,0 +1,95 @@
+
+@import "../../../../../responsive.scss";
+
+.blog-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0px 40px 134px;
+    
+    @include respond-to(mobile-small) {
+         padding: 0px;
+         flex-direction: column;
+         flex-wrap: wrap;
+         margin: 0px 15px;
+    }
+    @include respond-to(tablet) {
+        flex-wrap: wrap;
+      padding: 40px 15px 40px 15px;
+      justify-content: space-around;
+    }
+    
+}
+.row_wrap_div2 {
+    display: flex;
+    @include respond-to(mobile-small) {
+        flex-direction: column;
+    }
+    @include respond-to(laptop-extra-s) {
+        flex-direction: column;
+    }
+}
+
+.blog-wrap-mr {
+    flex-basis: 40%;
+    @include respond-to(mobile-small) {
+        flex-basis: 0%;
+    }
+}
+.blog-wrap-mr img {
+    @include respond-to(mobile-small) {   
+   max-width: 100%;
+   width: 100%;
+   overflow: hidden;
+   height: 250px;
+}
+@include respond-to(tablet) {   
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+ }
+ @include respond-to(laptop-extra-s) {   
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+ }
+}
+
+.blog-pera {
+    padding: 0px 12px;
+    @include respond-to(mobile-small) {
+        padding: 0px;
+    }
+    @include respond-to(tablet) {
+        padding: 0px;
+    }
+    @include respond-to(laptop-extra-s) {
+        padding: 0px;
+    }
+}
+.blog-pera h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #00152b;
+    font-family: manrope,sans-serif;
+    line-height: 1.5;
+}
+.blog-pera p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #848484;
+    font-family: var(--font_manrope);
+    line-height: 1.5rem;
+    padding: 0px;
+    margin: 4px 0px;
+
+}
+
+.blog-pera .Est_ {
+    font-family: system-ui;
+    font-weight: 900;
+ 
+}
+
+

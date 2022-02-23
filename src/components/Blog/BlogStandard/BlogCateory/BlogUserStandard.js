@@ -11,7 +11,7 @@ const BlogUserStandard = () => {
     return (
         <>
           <div className="categorys">
-        <div className="port-img">
+        <div className="port-img port-standard-img">
                    {Review.map((item => {
                      const {img ,  head ,  review , btn ,  svg1  ,   dateview } = item 
                      return (

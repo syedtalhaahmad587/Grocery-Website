@@ -10,11 +10,11 @@ import { useNavigate } from "react-router-dom";
 const Cart_popup = () => {
   const navigate = useNavigate();
   const [totalprice, settotalprice] = useState(0);
-  const { product : cart_product, quantity } = useSelector((state) => state.cartReducer);
+  const { product : cart_product, quantity } = useSelector(state => state.cartReducer);
   console.log(cart_product);
   const dispatch = useDispatch();
   // const  quantity  = useSelector((state) => state.quantity);
-  console.log(quantity);
+  // console.log(quantity);
   const [popup_cart, setpopup_cart] = useState(cart_product);
   const Add_cart = (item, index, operation) => {
     popup_cart[index].count = item.count
@@ -39,8 +39,7 @@ const Cart_popup = () => {
   const checkcart = (e, popup_cart) => {
     e.preventDefault();
     console.log(popup_cart);
-    // navigate(`/productcart/${popup_cart}` );
-    navigate("productcart");
+    navigate("/cart");
   };
 
   return (

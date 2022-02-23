@@ -9,6 +9,9 @@
     background: no-repeat;
     height: 476px;
 }
+.port-standard-img {
+    width: initial !important;
+}
 
 .lyt-view-blog-text {
     transition: .3s ease;

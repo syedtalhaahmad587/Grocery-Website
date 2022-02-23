@@ -1,7 +1,20 @@
+@import "../../../../responsive.scss";
 .faqq-row {
     display: flex;    
     width: 100%;
     padding: 5rem 9rem 9rem 10rem;
+    @include respond-to(mobile-small) {
+        padding: 5rem 15px 9rem 15px !important ;
+        flex-direction: column;
+    }
+    @include respond-to(mobile) {
+        padding: 5rem 3rem 9rem 3rem !important ;
+        flex-direction: column;
+    }
+    @include respond-to(tablet) {
+        padding: 5rem 5rem 9rem 5rem;
+        flex-direction: column;
+    }
 }
 
 .faqq-row>* {
@@ -11,15 +24,28 @@
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y);
+   
 }
 .col-row-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+    @include respond-to(mobile-small) {
+        width: 100%;
+    }
+    @include respond-to(tablet) {
+        width: 100%;
+    }
 }
 
 .col-row-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
+    @include respond-to(mobile-small) {
+        width: 100%;
+    }
+    @include respond-to(tablet) {
+        width: 100%;
+    }
 }
 
 .left-widget h5 {
@@ -50,21 +76,19 @@
 }
 
 .box--shadow {
-    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+    -webkit-box-shadow: 4px 8px 30px rgb(141 , 141 , 141);
+    box-shadow: 4px 8px 30px rgb(141 , 141 , 141);
 }
 .contact-left .conact-left-btn {
     padding: 13px 50px !important ;
     
 }
 .innner-fre input  {
-    
-    outline: none !important ;
-    
+    outline: none !important;
 }
 
 .innner-fre textarea {
-    outline: none !important ;
+    outline: none !important;
 }
 .contact-left textarea {
     padding: 12px 0px 72px 12px;
@@ -93,6 +117,14 @@ textarea {
     text-align: center;
     margin-bottom: 26px;
     margin-top: -6px;
+    @include respond-to(mobile-small) {
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+    @include respond-to(tablet) {
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
 }
 
 .section-title4 h2 {

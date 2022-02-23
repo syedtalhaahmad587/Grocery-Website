@@ -1,11 +1,11 @@
 import React from "react";
-import "./Address.css";
+import "./Address.scss";
 
 
 const Address = () => {
     return (
         <>
-          <div class="address-row contact-info-area g-4 justify-content-center pt-100">
+          <div class="address-row contact-info-area g-4 justify-content-center pt-100 pt-1001 ">
 <div class="col-lg-4 col-md-6">
 <div class="branch-info-item">
 <div class="branch-info-header">

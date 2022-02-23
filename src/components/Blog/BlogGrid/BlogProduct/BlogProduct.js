@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BlogData from "../BlogProduct/BlogGridApi"
-import "./BlogProduct.css";
+import "./BlogProduct.scss";
 
 const BlogProduct = () => {
     const [blogData , setBlogData ] = useState(BlogData)

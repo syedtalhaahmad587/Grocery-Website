@@ -31,9 +31,9 @@ import {
         <Route path="/product" element={<Product />} />
         <Route path="/productsidebar" element={<ProductSidebar />} />
         <Route path={`/productdetail/:category/:id`} element={<ProductDetail />} />
-        <Route path="cart" element={<ProductCarts />} />
-        <Route path="checkout" element={<CheckOut />} />
-        <Route path="acount" element={<MyAcount />} />
+        <Route path="/cart" element={<ProductCarts />} />
+        <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/acount" element={<MyAcount />} />
         <Route path="/login" element={<UserLogin  />} />
         <Route path="/register" element={<RegisterUser  />} />
         <Route path="/faq" element={<ErrorFAQ  />} />

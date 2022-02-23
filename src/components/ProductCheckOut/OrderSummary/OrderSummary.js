@@ -1,11 +1,14 @@
 import  React from "react";
-import  "./OrderSummary.css"
+import { AiOutlineCloseCircle } from "react-icons/ai"; 
+import { BsPlus  } from "react-icons/bs"; 
+import { BiMinus } from "react-icons/bi"; 
+import  "./OrderSummary.scss"
 
 const OrderSummary = () => {
     return  (
         <>
           <section className="checkout-section pt-100 pb-100">
-<div className="row_billing g-4 " style={{marginLeft:"8rem" , marginRight:"8rem" }} >
+<div className="row_billing g-4 " >
 <div className="col-lg-7">
 <div className="form-wrap box--shadow mb-30">
 <h4 className="title-25 mb-20">Billing Details</h4>
@@ -116,10 +119,10 @@ Order Summary
 <input type="number" min="1" max="90" step="10" value="1"/>
 <div className="quantity-nav">
 <div className="quantity-button quantity-up">
-<i className="las la-plus"></i>
+<BsPlus />
 </div>
 <div className="quantity-button quantity-down">
-<i className="las la-minus"></i>
+<BiMinus  />
 </div>
 </div>
 </div>
@@ -129,7 +132,7 @@ Order Summary
 </div>
 </div>
 <div className="delete-btn">
-<i className="las la-times"></i>
+<AiOutlineCloseCircle />
 </div>
 </li>
 <li className="single-product d-flex justify-content-start">
@@ -143,10 +146,10 @@ Order Summary
 <input type="number" min="1" max="90" step="10" value="1"/>
 <div className="quantity-nav">
 <div className="quantity-button quantity-up">
-<i className="las la-plus"></i>
+<BsPlus />
 </div>
  <div className="quantity-button quantity-down">
-<i className="las la-minus"></i>
+ <BiMinus />
 </div>
 </div>
 </div>
@@ -156,7 +159,7 @@ Order Summary
 </div>
 </div>
 <div className="delete-btn">
-<i className="las la-times"></i>
+<AiOutlineCloseCircle />
 </div>
 </li>
 <li className="single-product d-flex justify-content-start">
@@ -170,10 +173,10 @@ Order Summary
 <input type="number" min="1" max="90" step="10" value="1"/>
 <div className="quantity-nav">
 <div className="quantity-button quantity-up">
-<i className="las la-plus"></i>
+<BsPlus />
 </div>
 <div className="quantity-button quantity-down">
-<i className="las la-minus"></i>
+<BiMinus />
 </div>
 </div>
 </div>
@@ -183,7 +186,7 @@ Order Summary
 </div>
 </div>
 <div className="delete-btn">
-<i className="las la-times"></i>
+<AiOutlineCloseCircle />
 </div>
 </li>
 </ul>

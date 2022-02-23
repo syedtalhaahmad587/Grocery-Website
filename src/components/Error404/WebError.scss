@@ -1,0 +1,68 @@
+@import "../../../responsive.scss";
+.error-content {
+    margin: 2.5rem 2.5rem;
+    @include respond-to(mobile-small) {
+      margin: 2.5rem 3.5rem !important ;
+    }
+    @include respond-to(mobile) {
+      margin: 2.5rem 3.5rem !important ;
+      // padding: 0px;
+    }
+    @include respond-to(tablet) {
+      margin: 2.5rem 12rem;
+      //  padding: 0px;
+    }
+}
+
+.error-content h1 {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: manrope,sans-serif;
+    color: #00152b;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.error-content p {
+  padding: 0px 25rem;
+    margin: auto;
+    @include respond-to(mobile-small) {
+      // padding: 0px 3.5rem !important ;
+      padding: 0px; 
+    }
+    @include respond-to(mobile) {
+      // padding: 0px 3.5rem !important ;
+      padding: 0px;
+    }
+    @include respond-to(tablet) {
+      // padding: 0px 14rem;
+       padding: 0px;
+    }
+}
+.ur--error {
+    text-align: center;
+    margin: 4.5rem 0rem;
+    @include respond-to(mobile-small) {
+      padding: 0px 15px;
+    }
+}
+.error-btn {
+    padding: 13px 35px;
+    margin-top: 50px;
+}
+
+
+  .error-image img {
+    animation: bounceImg 2.5s linear infinite;
+    max-width: 100%;
+    @include respond-to(mobile-small) {
+         max-width: 300px !important ;
+    }
+  }
+  @keyframes bounceImg  {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
+  

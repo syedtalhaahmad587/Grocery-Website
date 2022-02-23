@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
-import "./Overview.css";
+import "./Overview.scss";
 import view_data from "./OverVeiwApi";
 import ReactStars from "react-rating-stars-component";
 import Scrool_Bar from "../../../UseScroll/Scroll"
@@ -23,11 +23,13 @@ const  OverView = () => {
     return (
         <>
         <h1 className="product_shedual">Product Details</h1>
-            <div  className="dispaly_flex veiw_details">
+            <div  className="veiw_details">
                 <div className="veiw_details_btn" >
                    <button  onClick={() => description() }>Discription</button>
                    <button  onClick={() =>  View() }>Our Review <span>(2)</span></button>
                 </div>
+                <div className="comment-section">
+                    <div>
                 {!discribtion ? 
                  <div className="veiw_details_text" >
                    <p>Aenean dolor massa, rhoncus ut tortor in, pretium tempus neque. Vestibulum venenatis leo et dictum finibus. Nulla vulputate dolor sit amet tristique dapibus. Maecenas posuere luctus leo, non consequat felis ullamc orper non. 
@@ -71,11 +73,12 @@ const  OverView = () => {
                     } )  }
                     </div>
                             }
-                    </div>
+                     </div>
+                    <div>
                      <div className="veiw_details_user">  
                     <h1>Leave A Comment</h1>
                      <p className="view_pera" >Your email address will not be published. Required fields are marked *</p>
-                     <div className="display_flex veiw_details_feilds">
+                     <div className="veiw_details_feilds">
                          <div className="veiw_details_input1">
                          <label> Your Name </label> 
                          <input  placeholder="Your Name" type="text"/>
@@ -102,7 +105,10 @@ const  OverView = () => {
                     activeColor="#ffd700"/></span>
                         <button className="view_btn"><Scrool_Bar showBelow={250} title="Post Comment"/></button>
                          </div>
-                         
+                   </div>
+                   </div>
+                   </div>
+                        
                    </>
     )
 }

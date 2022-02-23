@@ -1,19 +1,19 @@
 import React from "react";
-import "./Published.css";
+import "./Published.scss";
 
 const Published = () => {
   return (
     <>
       <div className="Published-uel">
         <h5>NICE PROJECT? GET IN TOUCH! WILL CONTACT YOU SOON</h5>
-        <div class="contact-form-area">
-          <div class="form-wrap box--shadow">
+        <div class="contact-form-area contact-lg-form">
+          <div class="form-wrap box--shadow form-row-wrap">
             <h4 class="title-25 contact-form-title mb-8">Get In Touch</h4>
             <p>
               Your email address will not be published. Required fields are
               marked *
             </p>
-            <form class="contact-form-title">
+            <form class="contact-form-title contact-lg-form  ">
               <div class="Publish-row">
                 <div class="col-md-6">
                   <div class="form-inner contact-input ">

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
-import "./WebError.css"
+import "./WebError.scss"
 import Grocery_screens from "../AboutScreen/ModalGrocerys/AboutGrocery"; 
 import Footer from "../FrontScreen/Footer/Footer";
 import { Link } from 'react-router-dom';

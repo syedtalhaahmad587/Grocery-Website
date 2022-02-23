@@ -1,11 +1,34 @@
+@import "../../../../../responsive.scss";
+
 .Select_Product {
    display: flex;
    margin: 50px 100px 50px 200px;
+   font-family: 'Manrope', sans-serif;
+   @include respond-to(mobile-small) {
+      margin: 3rem 15px !important ;
+      flex-direction: column;
+      flex-wrap: wrap;  
+   }
+   @include respond-to(tablet-s) {
+      margin: 3rem 15px !important ;
+      flex-direction: column;
+      flex-wrap: wrap;  
+   }
+   @include respond-to(laptop-small) {
+      margin: 50px 40px 50px 40px;
+     
+   }
 }
 
 .Select_image {
    display: flex;
    margin-right: 20px;
+   @include respond-to(mobile-small) { 
+      display: block;  
+   }
+   @include respond-to(tablet-s) { 
+      display: block;  
+   }
 }
 
 .display_flex {
@@ -13,10 +36,44 @@
 }
 .choose_img {
     line-height: 6.5;
+    @include respond-to(mobile-small) { 
+      
+         display: flex;
+         justify-content: space-evenly; 
+   }
+   @include respond-to(tablet-s) { 
+      display: flex;
+      justify-content: space-evenly; 
 }
-.product_selected_img {
+.check-gorcery-food img {
+   @include respond-to(tablet-s) { 
+      width: 100px;
+      height: 100px;
+}
+}
+}
+.product_selected_img  {
+   img {
+      @include respond-to(mobile-small) { 
+         height: 300px;
+         width: 300px;
+   }  
+   @include respond-to(tablet-s) { 
+      height: 300px;
+      width: 300px;
+}     
+   }
     margin-left: 16px;
+    @include respond-to(mobile-small) { 
+      margin: 0px;
+      text-align: center;
 }
+@include respond-to(tablet-s) { 
+   margin: 0px;
+   text-align: center;
+}   
+}
+
 
 .cart_start p {  
 margin-top: 6px;
@@ -25,9 +82,7 @@ margin-left: 14px;
 .product_describtion {
    line-height: 1.6;
 }
-.product_describtion p {
-   width: 451px;
-}
+
 .product_describtion h4 {
    color: var(--them_color);
    font-size: 22px;

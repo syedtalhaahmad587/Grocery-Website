@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import "./TextDropdown.css";
+import "./TextDropdown.scss";
 import CustomModal from "../LPopup/RPopup";
 
 const TextDropdown = ({
@@ -11,6 +11,7 @@ const TextDropdown = ({
   text_className,
   lgItem,
   nmLogin,
+  accordion_background 
 }) => {
   const [showText, setText] = useState(false);
   const [drop_lists, setdrop_lists] = useState(true);
@@ -27,9 +28,7 @@ const TextDropdown = ({
       <div className={`accordion-item ${lgItem}`}>
         <h2 className="accordion-header">
           <button
-            className={`accordion-collapse ${
-              className ? className : "default"
-            } `}
+            className={`accordion-collapse ${showText ? accordion_background : "" } `   }
             onClick={() => input_labren()}
           >
             <div className={`accordion-wrap `}>

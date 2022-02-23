@@ -1,3 +1,6 @@
+
+@import "../../../../responsive.scss";
+
 .address-row {
     max-width: 100%;
     padding-right: 1.5rem;
@@ -8,10 +11,40 @@
     margin-bottom: 5rem;
     margin-right: 7rem;
     margin-left: 7rem;
+    @include respond-to(mobile-small) {
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin: 0px 15px;
+    }
+   
+    @include respond-to(tablet-s) {
+        // flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0px 15px;
+  }
+  @include respond-to(laptop-extra-s) {
+    // flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 15px;
+}
 }
 
-.pt-100 {
+.pt-1001 {
     padding-top: 100px;
+    
+    @include respond-to(mobile-small) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include respond-to(tablet) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include respond-to(laptop-extra-s) {
+        padding: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
 
 .justify-content-center {
@@ -21,10 +54,25 @@
 .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+    @include respond-to(mobile-small) {
+        width: initial;
+
+    }
+    @include respond-to(tablet) {
+        width: initial;
+    }
 }
 .branch-info-item {
     margin-right: 20px;
     margin-left: 20px;
+    @include respond-to(mobile-small) {
+        margin: 0px;
+        padding-bottom: 2.5rem;
+    }
+    @include respond-to(tablet) {
+        margin: 0px;
+       padding: 16px 6px;
+    }
 
 }
 
@@ -61,6 +109,12 @@
     margin-top: -30px;
     padding: 55px 30px 25px;
     border-radius: 5px;
+    @include respond-to(mobile-small) {
+        width: initial;
+    }
+    @include respond-to(tablet) {
+        width: initial;
+    }
 }
 .branch-info-item .branch-info-body li {
     margin-bottom: 8px;
@@ -70,8 +124,8 @@
 }
 
 .box--shadow {
-    -webkit-box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
-    box-shadow: 4px 8px 30px rgb(141 141 141 / 10%);
+    -webkit-box-shadow: 4px 8px 30px rgb(141 , 141 , 141);
+    box-shadow: 4px 8px 30px rgb(141 , 141 , 141);
 }
 
 .text-center {
@@ -81,3 +135,6 @@ a:hover {
     text-decoration: none;
     color: unset;
 }
+
+
+ 
