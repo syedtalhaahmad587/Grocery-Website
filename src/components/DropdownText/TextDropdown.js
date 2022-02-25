@@ -22,22 +22,21 @@ const TextDropdown = ({
     setText(true);
   };
 
+  
   return (
     <>
-      <div> </div>
       <div className={`accordion-item ${lgItem}`}>
         <h2 className="accordion-header">
           <button
             className={`accordion-collapse ${showText ? accordion_background : "" } `   }
-            onClick={() => input_labren()}
-          >
-            <div className={`accordion-wrap `}>
-              <div
+            onClick={() => input_labren()}>
+            <div className={`accordion-wrap`}>
+              <div 
                 className={`rgb-text ${
                   showText ? "accorder_open" : "accorder_close"
                 }`}
               >
-                <p>{home_svg}</p>{" "}
+                <p>{home_svg}</p>
                 <p
                   className={`${
                     text_className ? text_className : "dropdownText"
@@ -109,7 +108,7 @@ const TextDropdown = ({
                       </ul>
                     </div>
                   </>
-                )}{" "}
+                )}
               </>
             ) : (
               <></>
@@ -120,5 +119,6 @@ const TextDropdown = ({
     </>
   );
 };
+
 
 export default TextDropdown;

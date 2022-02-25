@@ -14,7 +14,7 @@ const ProductCarts = () => {
        <Navbar />
        <Grocery_screens  heading="Cart" Userheading="Cart" gr_pera="cart_info" />
        <CartTable />
-       {/* <Coupon /> */}
+       <Coupon />
        <Footer />
        </>
    )

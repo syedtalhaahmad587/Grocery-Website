@@ -6,7 +6,7 @@
     margin-bottom: 32px;
     padding: 2rem 6rem;
     @include respond-to(mobile-small) {
-        padding: 2rem 15px !important ;
+        padding: 2rem 30px !important ;
     }
     @include respond-to(mobile) {
         padding: 2rem 4rem;

@@ -167,18 +167,14 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                   <li>
                     <NavbarDropdown
                       dropLink="Home"
-                      dropDownData={[{ item: "Home", href_link: "about" }]}
+                      dropDownData={[{ item: "Home", href_link: "/" }]}
                     />
                   </li>
                   <li>
                     <NavbarDropdown
                       dropLink="Shop"
                       dropDownData={[
-                        { item: "Product", href_link: "Product" },
-                        {
-                          item: "Product Details",
-                          href_link: "productdetails",
-                        },
+                        { item: "Product", href_link: "product" },
                         {
                           item: "Product Sidebar",
                           href_link: "productsidebar",
@@ -190,12 +186,12 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                     <NavbarDropdown
                       dropLink="Pages"
                       dropDownData={[
-                        { item: "Pages", href_link: "pages" },
                         { item: "About", href_link: "about" },
                         { item: "Cart", href_link: "cart" },
                         { item: "Checkout", href_link: "checkout" },
                         { item: "My Account", href_link: "acount" },
-                        { item: "Login Register", href_link: "loginregister" },
+                        { item: "Register", href_link: "register" },
+                        { item: "Login", href_link: "login" },
                         { item: "FAQ", href_link: "faq" },
                         { item: "Error", href_link: "error" },
                       ]}
@@ -205,10 +201,9 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                     <NavbarDropdown
                       dropLink="Blogs"
                       dropDownData={[
-                        { item: "Blogs", href_link: "blog" },
-                        { item: "Blog Grid", href_link: "bloggrid" },
-                        { item: "Blog Standard", href_link: "blogtandard" },
-                        { item: "Blog Details", href_link: "blogdetail" },
+                        { item: "Blog Grid", href_link: "blogGrid" },
+                        { item: "Blog Standard", href_link: "blogStandard" },
+                        { item: "Blog Details", href_link: "blogDetails" },
                       ]}
                     />
                   </li>
@@ -302,8 +297,8 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                   />
                 </div>
               )}
-              <li onClick={() => Swiper()}>
-                <FaBars />
+              <li>
+                <TemporaryDrawer/>
               </li>
               <li className="list_item" onClick={() => show_popup()}>
                 {" "}
@@ -316,7 +311,8 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
               </li>
               <li></li>
             </ul>
-
+            {screenWidth > 1199 ? 
+            <>
             <div>
               <p className="Fi_phone">
                 <FiPhoneCall />
@@ -326,6 +322,8 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
               <h4>Home Line Number</h4>
               <p>+880 176 1111 456</p>
             </div>
+          </> 
+          : null }
           </div>
         </div>
       </div>

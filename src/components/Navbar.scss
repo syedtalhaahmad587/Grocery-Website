@@ -183,8 +183,11 @@
     width: 650px;
     margin: 0px 35px;
     @include respond-to(laptop-small) {
-          width: 335px;
+          width: 335px !important ;
     }
+    @include respond-to(laptop-s) {
+        width: 400px !important ;
+  }
 }
 .search_flex .search_header button {
     position: absolute;
@@ -326,6 +329,8 @@
     text-decoration: none;
     color: black;
 }
+
+
 
 
   

@@ -46,8 +46,10 @@ const Footer = () => {
                     <div className="EG_shops">
                        <img src="images/Logo.png" alt="" />
                        <p>Register Now To Get Update On Promotion And Coupons<span className="display_block">Don't Worry! It's Not Spam</span> </p>
+                       <div className='Eg-shop-input'>
                        <input type="search" placeholder="Your Email"  />
                        <button>Send</button>
+                       </div>
                        <div className="App_logo  display_flex">
                           <span className="more_Logo"><RiFacebookLine /></span>
                           <span className="more_Logo"><IoLogoInstagram /></span>

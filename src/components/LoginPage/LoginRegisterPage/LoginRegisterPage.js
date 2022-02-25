@@ -1,5 +1,5 @@
 import React , {useState}  from "react"
-import "./LoginRegisterPage.css"
+import "./LoginRegisterPage.scss"
 import LoginPage from "../LoginRegisterPage/LoginPage/LoginPage"
 // import RegisterUser from "../LoginRegisterPage/RegisterPage/Register"
 import { useNavigate } from "react-router-dom"

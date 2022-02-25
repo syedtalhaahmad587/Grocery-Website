@@ -114,7 +114,9 @@ const CartTable = () => {
                 <tr>
                   <td data-label="Delete">
                     <div class="delete-icon">
-                      <TiDeleteOutline/>
+                      <TiDeleteOutline
+                      onClick={() => dispatch(isNumberDec(item, item.id))}
+                      />
                     </div>
                   </td>
                   <td data-label="Image">
@@ -131,11 +133,15 @@ const CartTable = () => {
                     <div class="quantity">
                       <span className="quantity__count-select-item" >{count}</span>
                       <div class="quantity-nav quantity-nav-bar ">
-                        <div class="quantity-button quantity-up" onClick={() => Add_cart(item, index, "Dec")} >
-                          <AiOutlinePlus />
+                        <div class="quantity-button quantity-up"  >
+                          <AiOutlinePlus 
+                          onClick={() => Add_cart(item, index, "Inc")}
+                          />
                         </div>
-                        <div class="quantity-button quantity-down" onClick={() => Add_cart(item, index, "Dec")} >
-                          <AiOutlineMinus />
+                        <div class="quantity-button quantity-down">
+                          <AiOutlineMinus
+                          onClick={() => Add_cart(item, index, "Dec")}
+                          />
                         </div>
                       </div>
                     </div>

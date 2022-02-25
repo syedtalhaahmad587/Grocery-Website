@@ -1,5 +1,6 @@
 import React, { useState  , useEffect } from "react";
 import { AiFillFacebook, AiOutlineUsergroupAdd } from "react-icons/ai";
+import "./LoginPage.scss";
 import { FaFacebookF } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useDispatch , useSelector  } from "react-redux";
@@ -17,12 +18,12 @@ const LoginPage = () => {
 
 
   
-  const { user : { currentUser } } = useSelector((state) => state);
-  useEffect(() => {
-    if(currentUser) {
-        navigate("/");
-    } 
-  }, [currentUser, navigate  ] );
+  // const { user : { currentUser } } = useSelector((state) => state);
+  // useEffect(() => {
+  //   if(currentUser) {
+  //       navigate("/");
+  //   } 
+  // }, [currentUser, navigate  ] );
 
   const change_input = (value , property) => {
     setobj({...obj , [property] : value  })
@@ -41,7 +42,7 @@ const LoginPage = () => {
    
   return (
     <>
-      <div className="form-wrap box--shadow user_vr_page">
+      <div className="form-wrap box--shadow user_vr_page form-regis-mn">
         <h3 className="title-30 text-center mb-35 user_title">
           Login Your Account
         </h3>
@@ -79,17 +80,17 @@ const LoginPage = () => {
             <div className="col-12">
               <div className="form-choice-area">
                 <p className="text-uppercase">or Sign up WITH</p>
-                <div className="wrap_row g-3 justify-content-center">
-                  <div className="col-md-6">
-                    <div className="eg-btn social-btn bg-light-blue">
+                <div className="wrap_row g-3 justify-content-center wrap-login-page">
+                  <div className="col-md-6  col-mobile-5">
+                    <div className="eg-btn social-btn bg-light-blue gl-btn">
                       <span className="sigup_svg">
                         <AiOutlineUsergroupAdd />
                       </span>
                       Signup whit google
                     </div>
                   </div>
-                  <div className="col-md-6">
-                    <div className="eg-btn social-btn bg-facebook">
+                  <div className="col-md-6 col-mobile-5">
+                    <div className="eg-btn social-btn bg-facebook  ">
                       <span className="facbook_svg">
                         <FaFacebookF />
                       </span>

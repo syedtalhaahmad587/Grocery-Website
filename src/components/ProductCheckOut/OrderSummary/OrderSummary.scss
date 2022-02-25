@@ -14,12 +14,29 @@
 .g-4, .gx-4 {
     --bs-gutter-x: 1.5rem;
 }
+.checkout-section {
+    margin: 0px 8rem;
+    
+    @include respond-to(laptop-extra-s) {
+        margin: 0px !important ;
+    }
+    
+    @include respond-to(tablet) {
+        margin: 0px 4rem !important;
+    }
+    @include respond-to(mobile-small) {
+        margin: 0px !important ;
+    }
+
+}
+
 
 .row_billing {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
+   
     @include respond-to(mobile-small) {
         flex-direction: column;
     }

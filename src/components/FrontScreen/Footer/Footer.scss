@@ -94,7 +94,10 @@
     line-height: 27px;
     padding-bottom: 26px;
 }
-.EG_shops input  {
+.Eg-shop-input {
+    position: relative;
+}
+.Eg-shop-input input  {
     padding: 8px 8px;
     border: 1px solid #505050;
     background: none;
@@ -111,15 +114,27 @@
     }
 }
 
-.EG_shops button {
+.Eg-shop-input button {
     position: absolute;
     padding: 9px 16px;
     outline: none;
     border: none;
-    right: 3px;
+    right: 4px;
     background-color: var(--them_color);
+    top: 0px;
+    border-radius: 2px;
+    background-color: var(--them_color);
+    // @include respond-to(mobile-small) {
+    //     right: 62px !important;
+    // }
+    @include respond-to(mobile-small) {
+        right:  62px !important ;
+    }
+    @include respond-to(mobile) {
+        right: 60px !important ;
+    }
     @include respond-to(tablet-s) {
-        right: 118px;
+        right: 100px;
     }
 }
 .App_logo {

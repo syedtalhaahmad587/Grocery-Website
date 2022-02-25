@@ -1,10 +1,21 @@
-import React , {useState}  from "react";
-import { AiOutlineUser, AiOutlineLogout , AiFillShopping , AiOutlineDashboard  } from "react-icons/ai";
+import React , {useState , useEffect }  from "react";
+import { AiOutlineUser, AiOutlineLogout , AiFillShopping , AiOutlineDashboard , AiFillEye } from "react-icons/ai";
 import "./NavPill.scss";
 import profile from "../../../assets/AboutImage.jpg";
 import Dropdown from "../../Dropdown/Dropdown";
 
 const NavPill = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+
+  const updateDimensions = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
     const [drop, setdrop] = useState(true);
     const [isdrop , setisdrop] = useState(true)
     const [wrmdrop , setwrmdrop] = useState(true)
@@ -169,14 +180,15 @@ const profile_LogOut = () => {
                    <th>Active</th>
                  </tr>
                </thead>
-               <tbody>
-                 <tr>
+                 {screenWidth > 768 ? 
+                  <tbody>
+                  <tr>
                    <td data-label="Order ID">#56986</td>
                    <td data-label="Order Date">21 August 2021</td>
                    <td data-label="Status">Pending</td>
                    <td data-label="Total">$ 985. 0789.00 for 85 Items</td>
                    <td data-label="Active">
-                     <i class="lar la-eye"></i>
+                     <AiFillEye/>
                    </td>
                  </tr>
                  <tr>
@@ -185,7 +197,7 @@ const profile_LogOut = () => {
                    <td data-label="Status">Picked</td>
                    <td data-label="Total">$ 34. 0789.00 for 65 Items</td>
                    <td data-label="Active">
-                     <i class="lar la-eye "></i>
+                   <AiFillEye/>
                    </td>
                  </tr>
                  <tr>
@@ -194,10 +206,43 @@ const profile_LogOut = () => {
                    <td data-label="Status">Completed</td>
                    <td data-label="Total">$ 56. 0789.00 for 30 Items</td>
                    <td data-label="Active">
-                     <i class="lar la-eye"></i>
+                   <AiFillEye/>
                    </td>
                  </tr>
-               </tbody>
+                 </tbody>
+                  : 
+                  <tbody>
+                  <tr>
+                  <td data-label="Order ID">#56986</td>
+                  <td data-label="Order Date">
+                  21 August 2021
+                  </td>
+                  <td data-label="Status">Pending</td>
+                  <td data-label="Total">$ 985. 0789.00 for 85 Items</td>
+                  <td data-label="Active"><AiFillEye/></td>
+                  </tr>
+                  <tr>
+                  <td data-label="Order ID">#56987</td>
+                  <td data-label="Order Date">
+                  25 April 2021
+                  </td>
+                  <td data-label="Status">Picked</td>
+                  <td data-label="Total">$ 34. 0789.00 for 65 Items</td>
+                  <td data-label="Active"><AiFillEye/></td>
+                  </tr>
+                  <tr>
+                  <td data-label="Order ID">#56988</td>
+                  <td data-label="Order Date">
+                  3rd June 2021
+                  </td>
+                  <td data-label="Status">Completed</td>
+                  <td data-label="Total">$ 56. 0789.00 for 30 Items</td>
+                  <td data-label="Active"><AiFillEye/></td>
+                  </tr>
+                  </tbody>
+
+                   }
+              
              </table>
              </div></>  
              : !drop ? <>

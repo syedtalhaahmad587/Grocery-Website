@@ -1,0 +1,41 @@
+
+@import "../../../../../responsive.scss";
+
+.form-regis-mn {
+    // margin: 20px 15px;
+    @include respond-to(mobile) {
+        margin: 20px 15px !important;
+    width: initial !important;
+    }
+    // @include respond-to(tablet) {
+    //     margin: 20px 4rem !important ;
+    // width: initial !important;
+    // }
+    
+}
+
+.gl-btn {
+    @include respond-to(mobile) {
+        margin: 14px 0px !important ;
+        // width: 204px !important ;
+    }
+    @include respond-to(tablet) {
+        margin-right: 20px;
+    }
+}
+.wrap-login-page {
+    @include respond-to(tablet) {
+        display: flex ;
+        flex-wrap: initial ;
+        margin: 0px;
+    }
+}
+
+.col-mobile-5 {
+    @include respond-to(mobile) {
+        width: 100% !important ;
+        }
+    @include respond-to(tablet) {
+    width: initial;
+    }
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Register.css";
+import "./Register.scss";
 import { AiFillFacebook, AiOutlineUsergroupAdd } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import Grocery_screens from "../../../AboutScreen/ModalGrocerys/AboutGrocery";
@@ -27,13 +27,13 @@ const RegisterUser = () => {
   const dispatch = useDispatch();    
   const navigate = useNavigate();    
 
-  const { user: { loading, success } } = useSelector(state => state);
-  console.log({loading, success})
-  useEffect(() => {
-    if(success) {
-        navigate("/login");
-    } 
-  }, [success, navigate ]);
+  // const { user: { loading, success } } = useSelector(state => state);
+  // console.log({loading, success})
+  // useEffect(() => {
+  //   if(success) {
+  //       navigate("/login");
+  //   } 
+  // }, [success, navigate ]);
 
   const changeobj = ( value , property ) => {
     setObject({...object , [property] : value });
@@ -62,7 +62,7 @@ const RegisterUser = () => {
           <button onClick={() => Navigator("/login")}>Login</button>
         </center>
       </div>
-      <div className="form-wrap box--shadow user_vr_page">
+      <div className="form-wrap box--shadow user_vr_page form-regis-mn">
         <h3 className="title-30 text-center mb-35 user_title ">
           Register Your Account
         </h3>
@@ -116,16 +116,16 @@ const RegisterUser = () => {
             <div className="col-12">
               <div className="form-choice-area">
                 <p className="text-uppercase">or Sign up WITH</p>
-                <div className="wrap_row g-3">
-                  <div className="col-md-6">
-                    <div className="eg-btn social-btn bg-light-blue">
+                <div className="wrap_row g-3 wrap-login-page">
+                  <div className="col-md-6 col-mobile-5">
+                    <div className="eg-btn social-btn bg-light-blue gl-btn">
                       <span className="sigup_svg">
                         <AiOutlineUsergroupAdd />
                       </span>
                       Signup whit google
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 col-mobile-5">
                     <div className="eg-btn social-btn bg-facebook">
                       <span className="facbook_svg">
                         <FaFacebookF />

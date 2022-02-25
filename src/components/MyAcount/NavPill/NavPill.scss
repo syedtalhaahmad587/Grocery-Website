@@ -149,7 +149,11 @@
     flex-direction: column;
     margin-left: 1.5rem;
     width: 800px;
-    height: 350px;
+    @include respond-to(mobile) {
+        width: 100% !important ;
+        box-shadow: none;
+    }
+    // height: 350px;
 
     @include respond-to(mobile) {
         margin: 0px 15px;
@@ -358,7 +362,42 @@
     border-collapse: collapse;
     overflow: hidden;
     margin: 3rem 3rem 3rem 3rem;
+    @include respond-to(mobile-small) {
+        margin: 0px;
+        width: 100%;
+        }
+        @include respond-to(mobile) {
+            margin: 0px;
+            width: 100%;
+            }
+
 }
+@include respond-to(mobile) {
+    .egr-table tbody tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .egr-table tbody tr td {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .egr-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        text-align: left;
+        padding-left: 15px;
+        font-weight: 600;
+        color: #00152b;
+    }
+}
+
 .table {
 
     color: #212529;
@@ -394,6 +433,9 @@
     vertical-align: top;
     text-align: center;
     border-width: 1px;
+    @include respond-to(mobile) {
+        display: none;
+    }
 }
 
 .order-table-area .order-table tr td {
@@ -413,6 +455,13 @@ element.style {
     border-width: 1px;
     vertical-align: middle;
     padding: 20px;
+    @include respond-to(mobile) {
+            display: block;
+            width: 100%;
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+        }
 }
 
 .eg_cards {

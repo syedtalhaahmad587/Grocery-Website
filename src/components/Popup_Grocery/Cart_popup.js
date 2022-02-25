@@ -69,7 +69,6 @@ const Cart_popup = () => {
                             className="close_icon"
                             onClick={() => dispatch(isNumberDec(item, item.id))}
                           >
-
                             <AiOutlineClose />
                           </span>
                         </li>
