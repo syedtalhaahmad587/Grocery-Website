@@ -28,11 +28,11 @@ const btnRef = useRef()
         </button> 
          {dropVisible ? 
         <div class="dropdown-content"> 
+         <ul className="navbr-list">
            {dropDownData.map((item , index ) => 
-                    <ul className="navbr-list">
-                    <li key={index}> <a href={item.href_link}>{item.item}</a></li>  
-                  </ul> 
-            )}   
+                    <li key={index} > <a href={item.href_link}>{item.item}</a></li>  
+            )} 
+            </ul>  
         </div>
         :null }
       </div>

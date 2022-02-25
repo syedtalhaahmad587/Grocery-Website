@@ -13,8 +13,9 @@ import MailIcon from "@mui/icons-material/Mail";
 import { FaBars } from "react-icons/fa";
 import NavbarDropdown from "../NavbarDropdown/NavbarDropdown";
 import { BsTruckFlatbed } from "react-icons/bs";
-import { FaFacebookF , FaWhatsapp  } from "react-icons/fa"
-import  {  FiInstagram ,FiTwitter } from "react-icons/fi";
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FiInstagram, FiTwitter } from "react-icons/fi";
+import TextDropdown from "../DropdownText/TextDropdown";
 export default function TemporaryDrawer(props) {
   const [state, setState] = React.useState({
     left: false,
@@ -38,25 +39,21 @@ export default function TemporaryDrawer(props) {
       onClick={toggleDrawer(anchor, true)}
       onKeyDown={toggleDrawer(anchor, true)}
     >
-      <List> 
+      <List>
         <h2 className="Eg-grocery-nav-heading">EG SHOP GROCERY </h2>
-         </List>
+      </List>
       <Divider />
       <List>
-        <NavbarDropdown
-        slider_dropdown="slider-dropdown"
-          dropLink="Shop"
-          dropDownData={[
-            { item: "Product", href_link: "product" },
-            {
-              item: "Product Sidebar",
-              href_link: "productsidebar",
-            },
-          ]}
+        <TextDropdown
+          nmLogin="true"
+          lgItem="login_dropdown"
+          className="login_collabs"
+          text_className=""
+          drop_text="Talha"
         />
       </List>
       <NavbarDropdown
-      slider_dropdown="slider-dropdown"
+        slider_dropdown="slider-dropdown"
         dropLink="Shop"
         dropDownData={[
           { item: "Product", href_link: "product" },
@@ -68,7 +65,7 @@ export default function TemporaryDrawer(props) {
       />
       <List>
         <NavbarDropdown
-        slider_dropdown="slider-dropdown"
+          slider_dropdown="slider-dropdown"
           dropLink="Pages"
           dropDownData={[
             { item: "About", href_link: "about" },
@@ -83,7 +80,7 @@ export default function TemporaryDrawer(props) {
         />
       </List>
       <NavbarDropdown
-      slider_dropdown="slider-dropdown"
+        slider_dropdown="slider-dropdown"
         dropLink="Blogs"
         dropDownData={[
           { item: "Blog Grid", href_link: "blogGrid" },
@@ -93,15 +90,28 @@ export default function TemporaryDrawer(props) {
       />
 
       <List>
-        <a className="nav-drop"  href="/contact">Contact</a>
+        <a className="nav-drop" href="/contact">
+          Contact
+        </a>
       </List>
       <div className="nav-pera-touch">
-      <h3>Get in touch</h3>
-      <p>541 Melville Ave, Palo Alto, CA 94301</p>
-      <p>connect.us@gmail.com</p>
-      <div className="logo-nav-icons"><span className="left-icon" ><FaFacebookF /></span>
-      <span className="left-icon" ><FaWhatsapp /></span>
-      <span className="left-icon" ><FiInstagram /></span><span className="left-icon" ><FiTwitter/></span></div>
+        <h3>Get in touch</h3>
+        <p>541 Melville Ave, Palo Alto, CA 94301</p>
+        <p>connect.us@gmail.com</p>
+        <div className="logo-nav-icons">
+          <span className="left-icon">
+            <FaFacebookF />
+          </span>
+          <span className="left-icon">
+            <FaWhatsapp />
+          </span>
+          <span className="left-icon">
+            <FiInstagram />
+          </span>
+          <span className="left-icon">
+            <FiTwitter />
+          </span>
+        </div>
       </div>
     </Box>
   );
