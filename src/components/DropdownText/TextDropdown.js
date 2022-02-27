@@ -11,7 +11,10 @@ const TextDropdown = ({
   text_className,
   lgItem,
   nmLogin,
-  accordion_background 
+  accordion_background, 
+  accordion_wrap_collapse,
+  DrawerDropdownData,
+  drawerSnap
 }) => {
   const [showText, setText] = useState(false);
   const [drop_lists, setdrop_lists] = useState(true);
@@ -28,7 +31,7 @@ const TextDropdown = ({
       <div className={`accordion-item ${lgItem}`}>
         <h2 className="accordion-header">
           <button
-            className={`accordion-collapse ${showText ? accordion_background : "" } `   }
+            className={`accordion-collapse  ${accordion_wrap_collapse}  ${showText ? accordion_background: "" } `   }
             onClick={() => input_labren()}>
             <div className={`accordion-wrap`}>
               <div 
@@ -37,12 +40,8 @@ const TextDropdown = ({
                 }`}
               >
                 <p>{home_svg}</p>
-                <p
-                  className={`${
-                    text_className ? text_className : "dropdownText"
-                  } `}
-                >
-                  {drop_text}
+                <p  className={`${ text_className ? text_className : "dropdownText" } `} >   
+                   {drop_text}
                 </p>
               </div>
               <div className="svg-icon">
@@ -61,11 +60,12 @@ const TextDropdown = ({
           <div className="accordion-body" onClick={() => input_labren()}>
             {showText ? (
               <>
-                {!nmLogin ? (
+                {!nmLogin ? ( 
                   <div className="prg-pera ">{drop_pera}</div>
                 ) : (
                   <>
-                    <div>
+                  {!drawerSnap ?      
+                                  <div>
                       <ul className="dropdown-menu">
                         <li>
                           <a className="header_account__dropdown__link">
@@ -107,6 +107,16 @@ const TextDropdown = ({
                         </li>
                       </ul>
                     </div>
+                    :      
+                                 
+                    <ul className="navbar-drawer-list">
+                      {DrawerDropdownData.map((item , index ) => 
+                    <li key={index} > <a href={item.href_link}>{item.item}</a></li>  
+                     )} 
+                 </ul> 
+                    
+                    }
+
                   </>
                 )}
               </>

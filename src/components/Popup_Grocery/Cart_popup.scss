@@ -1,3 +1,4 @@
+@import "../../../responsive.scss";
 .lighter-text {
     color: #ABB0BE;
   }
@@ -36,8 +37,14 @@
     z-index: 200;
     /* width: 674px; */
     display: flex;
-    right: 210px;
+    right: 200px;
     transition: all 0.3s ease-out;
+    @include respond-to(laptop-small){
+      right: 42px;
+    }
+    @include respond-to(tablet-s) {
+      right: 3px;
+    }
 }
 
   

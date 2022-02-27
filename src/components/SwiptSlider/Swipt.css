@@ -34,3 +34,19 @@
     padding-left: 5px;
     padding-right: 5px;
 }
+.shopping-cart2 {
+    top: 0px !important;
+    z-index: 400;
+}
+.shopping-cart2::before {
+    display: none;
+}
+
+.cart-npm {
+    margin-top: 28px;
+}
+
+.checkout-btn button {
+    top: initial ;
+    bottom: 0px;
+}

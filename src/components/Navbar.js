@@ -13,6 +13,7 @@ import TemporaryDrawer from "../components/SwiptSlider/Swipt";
 import { useNavigate } from "react-router-dom";
 import TextDropdown from "../components/DropdownText/TextDropdown";
 import NavbarDropdown from "./NavbarDropdown/NavbarDropdown";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const navigate = useNavigate();
@@ -49,6 +50,7 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const show_popup = () => {
     setpopup(!popup);
+   
   };
   const Swiper = () => {
     setswipt(!swipt);
@@ -59,10 +61,12 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
       <div className="vertically">
         <div className="vertically__navigateNavbar">
           <div className="mobile-menu-btn">
-            <span className="fw-bold">Menu</span>
+            <span className="fw-bold"><TemporaryDrawer DrawerBtn="Menu"  height={250} /></span>
           </div>
-          <div>
             {screenWidth > 639 ? (
+              <>
+              <div className="logo-screen-lg" ><Link to="/" ><img src={about_logo } /></Link></div>
+              <div>
               <div className="flex_3">
                 <ul className="un_orderlist1">
                   <li>
@@ -72,6 +76,7 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                     <li onClick={() => navigate("/login")}>
                       <AiOutlineUser />
                     </li>
+                    
                   ) : (
                     <div>
                       <TextDropdown
@@ -106,10 +111,11 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                         }
                         drop_text="Talha"
                       />
+
                     </div>
                   )}
-                  <li onClick={() => Swiper()}>
-                    <FaBars />
+                  <li>
+                    <TemporaryDrawer DrawerBtn={<FaBars />} height={250}  />
                   </li>
                   <li className="list_item" onClick={() => show_popup()}>
                     {quantity > 0 ? (
@@ -122,10 +128,12 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                   <li></li>
                 </ul>
               </div>
+               </div>
+               </>
             ) : (
-              <img src={about_logo} />
+             <Link to="/"> <img src={about_logo} /></Link>
             )}
-          </div>
+         
         </div>
       </div>
       <div className="vertically_bottom">
@@ -136,14 +144,16 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
           <div>
             <FaBars />
           </div>
+          
           <div>
-            <span onClick={() => show_popup()}>
+            <span>
               {quantity > 0 ? (
-                <span className="use_qty">
+                
+               <span className="use_qty use-quantity">
                   <button>{quantity}</button>
                 </span>
               ) : null}
-              <BsFillCartFill />
+              <TemporaryDrawer DrawerBtn={<span className="Cart-logo"><BsFillCartFill/></span>} left="right" screenDrawer={true} height={321}  />
             </span>
           </div>
           <div>
@@ -155,7 +165,7 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
       <div
         className={
           navbar
-            ? `main_navbar ${props.className} sticky  `
+            ? `main_navbar ${props.className} sticky`
             : `main_navbar ${props.className}`
         }
       >
@@ -299,16 +309,17 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                 </div>
               )}
               <li>
-                <TemporaryDrawer/>
-              </li>
-              <li className="list_item" onClick={() => show_popup()}>
+                {!Search ? <TemporaryDrawer DrawerBtn={<FaBars />} height={250}  /> : null }
+              </li>  
+              <li className="list_item">
+                
                 {" "}
                 {quantity > 0 ? (
                   <span className="use_qty">
                     <button>{quantity}</button>
                   </span>
                 ) : null}
-                <BsFillCartFill />
+               <span onClick={() => show_popup()} > <BsFillCartFill /></span>
               </li>
               <li></li>
             </ul>
@@ -329,7 +340,7 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
         </div>
       </div>
       {popup ? <Cart_popup /> : ""}
-      {swipt ? <TemporaryDrawer /> : ""}
+      {swipt ? <TemporaryDrawer DrawerBtn={<FaBars />} height={250}  /> : ""}
     </>
   );
 };

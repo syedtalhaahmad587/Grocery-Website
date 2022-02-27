@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./Cart_popup.css";
+import "./Cart_popup.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { BsFillCartFill } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { isNumberDec } from "../../redux/action";
 import { useNavigate } from "react-router-dom";
 
-
-const Cart_popup = () => {
+const Cart_popup = ({className}) => {
   const navigate = useNavigate();
   const [totalprice, settotalprice] = useState(0);
   const { product : cart_product, quantity } = useSelector(state => state.cartReducer);
@@ -15,6 +14,7 @@ const Cart_popup = () => {
   const dispatch = useDispatch();
   // const  quantity  = useSelector((state) => state.quantity);
   // console.log(quantity);
+  
   const [popup_cart, setpopup_cart] = useState(cart_product);
   const Add_cart = (item, index, operation) => {
     popup_cart[index].count = item.count
@@ -44,7 +44,7 @@ const Cart_popup = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className={`container ${className ? className  : ""} `} >
         <div className="shopping-cart">
           <div className="shopping-cart-header">
             <BsFillCartFill />

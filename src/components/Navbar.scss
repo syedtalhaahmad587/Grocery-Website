@@ -146,7 +146,8 @@
 }
 .un_orderlist1 {
     display: flex;
-    margin: 0px 25px 0px 0px;
+    // margin: 0px 25px 0px 0px;
+    margin: 0px 15px 0px 50px;
     @include respond-to(tablet-s) {
         margin-right: -35px;
         margin-left: 35px;
@@ -155,7 +156,9 @@
 } 
 .un_orderlist1 li {
     list-style: none;
-    padding: 0px 0px 0px 24px;
+    // padding: 0px 0px 0px 24px;
+    padding: 0px 10px 0px 0px;
+    cursor: pointer;
     @include respond-to(tablet-s) {
         padding-left: 12px;
     padding-right: 12px;
@@ -180,7 +183,7 @@
     /* border: 1px solid white; */
     background: none;
     outline: none;
-    width: 650px;
+    width: 550px;
     margin: 0px 35px;
     @include respond-to(laptop-small) {
           width: 335px !important ;
@@ -329,7 +332,18 @@
     text-decoration: none;
     color: black;
 }
+.logo-screen-lg img {
+    padding-left: 9rem;
+}
 
+.Cart-logo {
+    font-size: 20px;
+}
+
+.use-quantity {
+    z-index: 200;
+    margin-top: 4px;
+}
 
 
 
