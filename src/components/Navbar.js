@@ -223,7 +223,7 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
                   </li>
                 </>
               ) : (
-                <img src={about_logo} />
+                <Link to="/" ><img src={about_logo} /></Link>
               )}
             </ul>
           </div>
