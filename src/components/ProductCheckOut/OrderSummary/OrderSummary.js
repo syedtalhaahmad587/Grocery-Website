@@ -115,7 +115,7 @@ Order Summary
 <div className="product-info">
 <h5 className="product-title"><a href="#">Organic Vegetable grains</a></h5>
 <div className="product-total d-flex align-items-center">
-<div className="quantity">
+<div className="quantity Summary-quantity ">
 <input type="number" min="1" max="90" step="10" value="1"/>
 <div className="quantity-nav">
 <div className="quantity-button quantity-up">
@@ -142,7 +142,7 @@ Order Summary
 <div className="product-info">
 <h5 className="product-title"><a href="#">Fresh Vegetable Eggplant</a></h5>
 <div className="product-total d-flex align-items-center">
-<div className="quantity">
+<div className="quantity Summary-quantity ">
 <input type="number" min="1" max="90" step="10" value="1"/>
 <div className="quantity-nav">
 <div className="quantity-button quantity-up">
@@ -169,7 +169,7 @@ Order Summary
 <div className="product-info">
 <h5 className="product-title"><a href="#">Fresh Vegetable Eggplant</a></h5>
 <div className="product-total d-flex align-items-center">
-<div className="quantity">
+<div className="quantity Summary-quantity">
 <input type="number" min="1" max="90" step="10" value="1"/>
 <div className="quantity-nav">
 <div className="quantity-button quantity-up">

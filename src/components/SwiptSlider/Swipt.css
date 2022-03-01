@@ -50,3 +50,29 @@
     top: initial ;
     bottom: 0px;
 }
+.Top-Drawer {
+  margin: 35px;   
+}
+.Top-Drawer label  {
+    font-size: 14px;
+    font-weight: 500;
+    color: #505050;
+    margin-bottom: 10px;
+    font-family: manrope,sans-serif;
+}
+
+.Top-Drawer input  {
+    border: none;
+    
+}
+/* .search-mobile-input {
+    border-radius: 0px;
+} */
+.search-mobile-input input {
+    border: none;
+   border-radius: 0px;
+    outline: none !important ;
+    border-bottom: 2px solid #505050;
+    padding: 3px 2px;
+
+}

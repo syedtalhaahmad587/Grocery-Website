@@ -23,7 +23,7 @@ import { BsFillCartFill } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { isNumberDec } from "../../redux/action";
 
-export default function TemporaryDrawer({DrawerBtn , left , screenDrawer , height }) {
+export default function TemporaryDrawer({DrawerBtn , left , screenDrawer , height , screen_TopDrawer  }) {
   const [state, setState] = React.useState({
     left: false,
   });
@@ -88,6 +88,8 @@ export default function TemporaryDrawer({DrawerBtn , left , screenDrawer , heigh
       onClick={toggleDrawer(anchor, true)}
       onKeyDown={toggleDrawer(anchor, true)}
     >
+      {!screen_TopDrawer ? 
+      <>
       {!screenDrawer ?  
       <>
       <List> 
@@ -229,6 +231,13 @@ export default function TemporaryDrawer({DrawerBtn , left , screenDrawer , heigh
       </div>
     </div>
   </div></> }
+  </>
+  : <>
+  <div className="Top-Drawer" >
+    <label>What are you looking for ?</label>
+    <span className="search-mobile-input" ><input type="Text"  placeholder="Search Products, Category, Brand"  /></span>
+    </div>
+  </> }
     </Box>
   );
 

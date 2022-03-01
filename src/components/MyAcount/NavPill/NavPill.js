@@ -131,7 +131,7 @@ const profile_LogOut = () => {
                  <p className="pf_cameron"> Williamson</p>
                 </div>
                 <div className="display_flex dr-cameron ">
-                <p>Address :</p>
+                <p>Address:</p>
                  <p className="pf_cameron">Eight Avenue 487, London</p>
                 </div>
                 <div className="display_flex dr-cameron ">
@@ -154,7 +154,7 @@ const profile_LogOut = () => {
                  <p className="pf_cameron"> Williamson</p>
                 </div>
                 <div className="display_flex dr-cameron ">
-                <p>Address :</p>
+                <p>Address:</p>
                  <p className="pf_cameron">Lavaca Street, Suite 2000 Austin, TX, Bangladesh.</p>
                 </div>
                 <div className="display_flex dr-cameron ">

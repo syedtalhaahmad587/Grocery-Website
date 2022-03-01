@@ -150,6 +150,10 @@
     box-sizing: border-box;
     border-radius: 5px;
     padding: 30px;
+    @include respond-to(mobile-small) {
+        padding: 30px 12px !important;
+        margin: 2rem 0px;
+    }
 }
 .mb-30 {
     margin-bottom: 30px;
@@ -208,6 +212,11 @@ ul {
 .quantity {
     position: relative;
     display: inline-table;
+}
+.Summary-quantity {
+    @include respond-to(mobile-small) {
+        margin: initial;
+    }
 }
 
 .quantity input {

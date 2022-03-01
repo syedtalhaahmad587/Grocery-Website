@@ -470,6 +470,9 @@ element.style {
     box-shadow: 4px 8px 30px rgb(141 , 141 , 141 ,);
     height: 260px;
     margin: 0px 5px;
+    @include respond-to(mobile-small) {
+        height: auto !important;
+    }
     @include respond-to(mobile) {
         margin: 10px 0px;
     }
@@ -481,6 +484,9 @@ element.style {
 .eg_cards p {
     line-height: 0.5;
     margin-top: 25px;
+    @include respond-to(mobile) {
+        line-height: 1 !important;
+    }
 }
 
 .dr-cameron .pf_cameron {

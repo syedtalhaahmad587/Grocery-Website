@@ -139,7 +139,7 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
       <div className="vertically_bottom">
         <div className="vertically_bottom__navbar-Row">
           <div>
-            <FiSearch />
+            <TemporaryDrawer DrawerBtn={<span className="Cart-logo"><FiSearch/></span>} left="top" screen_TopDrawer={true}  />
           </div>
           <div>
             <FaBars />
@@ -157,7 +157,7 @@ const [screenWidth, setScreenWidth] = useState(window.innerWidth);
             </span>
           </div>
           <div>
-            <FiPhoneCall />
+            <span onClick={() => navigate("/login")} >  <AiOutlineUser /></span>
           </div>
         </div>
       </div>
