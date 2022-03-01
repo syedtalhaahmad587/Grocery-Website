@@ -170,8 +170,8 @@
     margin-bottom: 20px;
     display: flex !important;
     @include respond-to(mobile-small) {
-        margin-bottom: 20px;
-        display: block  ;
+        margin-bottom: 20px !important; 
+        display: initial !important ;
     }
     @include respond-to(laptop-s) {
         margin-bottom: 20px;
@@ -182,11 +182,10 @@
 .veiw_details_feilds label {
     display: block;
     margin-bottom: 8px;
-
 }
 .veiw_details_feilds input {
     padding: 8px 6px;
-    width: 250px !important ;
+    width: 250px !important;
     @include respond-to(mobile-small) {
         padding: 12px 6px !important ;
         width: 100% !important ;
@@ -202,7 +201,7 @@
     margin-top: 0px !important ;
     @include respond-to(mobile-small) {
         margin-bottom: 12px;
-        margin-right: 0px;
+        margin-right: 0px !important ;
     }
     @include respond-to(tablet-s) {
         margin-bottom: 12px;
@@ -250,6 +249,9 @@
     padding: 12px 24px;
     border-radius: 4px;
     margin-top: 12px;
+}
+.veiw_details_input2 {
+    margin-bottom: 16px;
 }
 
 .view_btn:hover {

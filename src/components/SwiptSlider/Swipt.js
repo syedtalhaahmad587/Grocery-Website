@@ -55,7 +55,7 @@ export default function TemporaryDrawer({DrawerBtn , left , screenDrawer , heigh
   useEffect(() => {
     let price = 0;
     cart_product.forEach((item) => {
-      price += item.count * item.price;
+      price += item.count * item.prices;
 
       return item;
     });
@@ -188,7 +188,7 @@ export default function TemporaryDrawer({DrawerBtn , left , screenDrawer , heigh
                         <button>-</button>
                       </span>
                       <span className="product_rate_change">
-                        {item.count}
+                        {!item.count ? dispatch(isNumberDec(item, item.id)) : item.count}
                       </span>
                       <span
                         className="product_rate_plus"
@@ -197,10 +197,10 @@ export default function TemporaryDrawer({DrawerBtn , left , screenDrawer , heigh
                         <button>+</button>
                       </span>
                       <span className="product_rate_Multiply">*</span>
-                      <span className="product_rupess">{item.price}</span>
+                      <span className="product_rupess">{item.prices}</span>
                     </div>
                     <div className="Product_rupees">
-                      <p>{item.price * item.count}</p>
+                      <p>{item.prices * item.count}</p>
                     </div>
                   </div>
                   <hr className="border_line"></hr>

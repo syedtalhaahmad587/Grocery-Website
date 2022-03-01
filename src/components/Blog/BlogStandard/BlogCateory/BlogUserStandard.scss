@@ -1,8 +1,13 @@
+@import "../../../../../responsive.scss";
 .inl-blog {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
+.standard-category {
+    @include respond-to(mobile-small) {
+        margin: 5rem 15px !important ;
+    }
+}
 .inl-blog img  {
     width: 100%;
     height: auto;
@@ -85,5 +90,10 @@
 
 .blog-mn-standard {
     margin-top: 2.4rem;
+    @include respond-to(mobile-small) {
+        width: initial;
+    }
+    
+    
 }
 

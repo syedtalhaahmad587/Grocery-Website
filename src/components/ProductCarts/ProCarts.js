@@ -5,8 +5,7 @@ import Grocery_screens from "../AboutScreen/ModalGrocerys/AboutGrocery";
 import  CartTable from "../../components/ProductCarts/CartTable/CartTabe";
 import Coupon from "../../components/ProductCarts/ProductCoupon/Coupon";
 import Footer from "../../components/FrontScreen/Footer/Footer";
-import { useSelector } from "react-redux";
-import { useLocation, useParams } from 'react-router-dom';
+
 // import { Location } from "react-router-dom";
 const ProductCarts = () => {
    return (

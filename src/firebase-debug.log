@@ -1,0 +1,31 @@
+[debug] [2022-02-28T07:56:30.047Z] ----------------------------------------------------------------------
+[debug] [2022-02-28T07:56:30.050Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-02-28T07:56:30.051Z] CLI Version:   10.2.1
+[debug] [2022-02-28T07:56:30.051Z] Platform:      win32
+[debug] [2022-02-28T07:56:30.051Z] Node Version:  v16.13.1
+[debug] [2022-02-28T07:56:30.056Z] Time:          Mon Feb 28 2022 12:56:30 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-02-28T07:56:30.056Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-28T07:56:30.070Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-28T07:56:30.071Z] > authorizing via signed-in user (syedtalhaahmed586@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\React.js\Grocery-Website-\src
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[debug] [2022-02-28T07:56:39.046Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:215:13)
+    at process.listener (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:390:28)
+[error] 
+[error] Error: An unexpected error has occurred.

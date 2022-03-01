@@ -51,7 +51,7 @@ const CartTable = () => {
             </thead>
             <tbody>
               {product_cart.map((item, index) => {
-                const { image, text, price, count } = item;
+                const { image, text, prices, count } = item;
                 return (
                   <>
                     <tr key={index}>
@@ -67,13 +67,13 @@ const CartTable = () => {
                       </td>
                       <td data-label="Product Name">{text}</td>
                       <td data-label="Unite Price">
-                        <del>${price}</del>
+                        <del>${prices}</del>
                       </td>
-                      <td data-label="Discount Price">${price}</td>
+                      <td data-label="Discount Price">${prices}</td>
                       <td data-label="Quantity">
                         <div class="quantity">
                           <span className="cart-quantity-count  quantity-count">
-                            {count}
+                            {!count  ?  dispatch(isNumberDec(item, item.id)) : count  }
                           </span>
                           <button className="cart-plus-quantity quantity-plus">
                             <span onClick={() => Add_cart(item, index, "Inc")}>
@@ -95,7 +95,7 @@ const CartTable = () => {
                           </div>
                         </div>
                       </td>
-                      <td data-label="Subtotal">{item.price * item.count}</td>
+                      <td data-label="Subtotal">{item.prices * item.count }</td>
                     </tr>
                   </>
                 );

@@ -7,6 +7,13 @@
     -webkit-transition: all .3s;
     transition: all .3s; 
     font-family: manrope,sans-serif;
+    @include respond-to(mobile-small){ 
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+       flex-direction: column;
+       margin: 0px 15px;
+    }
     @include respond-to(tablet-s){ 
         padding: 0px;
         display: flex;
@@ -38,7 +45,7 @@
     @include respond-to(mobile-small){
           display: flex !important;
           flex-wrap: wrap !important;
-          width: 100%;
+          width: initial !important ;
     }
     @include respond-to(tablet-s){
         flex: 0 0 auto;

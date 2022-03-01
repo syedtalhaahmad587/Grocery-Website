@@ -4,13 +4,13 @@ import { FaFacebookF , FaInstagramSquare , FaTwitter  } from "react-icons/fa";
 import { ImPinterest   } from "react-icons/im";
 import { AiOutlineClockCircle   } from "react-icons/ai";
 import BlogUser from "./UserBlogApi";
-import "./BlogUserStandard.css"
+import "./BlogUserStandard.scss"
 
 const BlogUserStandard = () => {
   const [ Review , SetReview ] = useState(BlogUser)
     return (
         <>
-          <div className="categorys">
+          <div className="categorys standard-category ">
         <div className="port-img port-standard-img">
                    {Review.map((item => {
                      const {img ,  head ,  review , btn ,  svg1  ,   dateview } = item 

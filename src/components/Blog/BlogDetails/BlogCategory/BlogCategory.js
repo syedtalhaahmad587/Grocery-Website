@@ -14,13 +14,13 @@ const BlogCategory = () => {
   const [VeiwData , setVeiwData ] = useState(view_data) 
   return (
     <>
-      <div className="categorys">
-        <div className="port-img">
+      <div className="categorys blog-port-category ">
+        <div className="port-img blog-port-img">
           <img src="ProductImages/blg-grid7.jpg" title="" />
           <div className="categorys-gorcery">
               <div><p>Grocery</p></div>
               <div>
-                 <span><AiOutlineClockCircle/></span>
+                 {/* <span><AiOutlineClockCircle/></span> */}
                  <span className="details-pera">Date 25 Jan 2021</span>
               </div>
           </div>
@@ -133,7 +133,7 @@ const BlogCategory = () => {
                     
         </div>
         
-        <div className="port-category">
+        <div className="port-category blog-category">
           {/* <h2>BLOG CATEGORY</h2> */}
           <aside class="widget-area">
             <div class="widget2">

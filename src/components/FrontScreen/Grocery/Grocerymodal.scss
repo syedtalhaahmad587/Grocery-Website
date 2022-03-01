@@ -69,10 +69,11 @@
       font-size: 48px;
      }
     @include respond-to(mobile-small) {
-      font-size: 36px;
+      font-size: 25px !important ;
       line-height: 55px;
-      padding: 0px 18px;
+      padding: 0px 12px !important ;
       margin: 0px auto !important ;
+      
   }
   
   }
@@ -93,6 +94,9 @@
      margin: 0 auto;
      height: 70px;
      margin-top: 38px;
+     @include respond-to(mobile-small) {
+       margin-bottom: 38px;
+     }
    
   /* border: 1px solid #fffou; */
     

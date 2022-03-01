@@ -10,21 +10,30 @@ import { useDispatch , useSelector } from "react-redux";
  
 const ProductList = (props) => {
   const {in_product , sidebar_row , sidebar_list ,  viewitems , isRelated_product , 
-        related_heading , related_product_item, list } = props
+        related_heading , related_product_item , list } = props
   const navigate = useNavigate();  
-    const cart_product = useSelector(state => state.product)
 
     const [cartcheck, setcartcheck] = useState(0)
     const [addcount , setaddcount] = useState()
-    const  [data , setdata] = useState([...list])
+    const  [data , setdata] = useState([...list]);
+    console.log(data)
      const [btnchg , setbtnchg] = useState(true);
-    //  const [list ,setlist] = useState();
+    
 
     useEffect(() => {
       setdata([...list]);
     }, [list])
      
-   
+    // useEffect(() => {
+    //   let prices = 0;
+    //   cart_product.forEach((item) => {
+    //     prices += item.count * item.prices;
+  
+    //     return item;
+    //   });
+  
+    //   settotalprice(prices);
+    // }, [cart_product, settotalprice]);
        
        
       const dispatch = useDispatch()
@@ -61,14 +70,14 @@ const ProductList = (props) => {
           
               <div  className={`row ${sidebar_row} ${related_product_item}  `}>  
             {data.map((item , index ) => {
-                const { image , text , price , rating , id , btn , category  } = item;
+                const { image , text , prices , rating , id , btn , category  } = item;
                 return (
                     <>
                 <div className={`product_list ${sidebar_list}` } key={index} onClick={!isRelated_product ? (e) => routeTo( e , id , category ) : () => {}}>
                 <div className="product_list_cart"> 
                 <div className="img_src"><img src={`${window.location.origin}/${image}`} alt="" /></div>
                 <p>{text}</p>
-                <h4>{price}</h4>
+                <h4>{prices}</h4>
                 <span  className="Stars">
                    <ReactStars
                     className="Stars"

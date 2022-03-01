@@ -12,8 +12,8 @@ const ProductSidebar = () => {
            heading="Product Sidebar" Userheading="Product Sidebar"
            gr_pera="Product_Sidebar"/> 
             <Sidebarfilter />
-            {/* <Delivery  className="delivery_authoritizes"/>
-            <Footer /> */}
+            <Delivery  className="delivery_authoritizes"/>
+            <Footer />
           </>
     )
 } 

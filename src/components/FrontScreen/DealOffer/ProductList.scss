@@ -55,6 +55,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+
 }
 .Stars {
     display: flex;
@@ -115,14 +116,7 @@
 .btn_inc {
     cursor: pointer;
 }
-.product_sidebar {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3rem 72px 3rem 72px;
-  /* padding: 25px 312px 0px calc((100% - (292px * 3)) / 2) !important; */
-//   padding: 25px 20px 0px calc((100% - (198px * 3)) / 2) !important;
-
-}    
+   
 
 .product_sidebar_list {
     padding: 16px 34px;
@@ -135,9 +129,7 @@
     margin-left: 190px;
     border-bottom: 2px solid #eee;
     padding-bottom: 8px;
-    @include respond-to(mobile-small) {
-        margin: 0px 15px;
-    }
+    
     @include respond-to(mobile) {
         margin-right: 120px;
         margin-left: 120px;
@@ -146,6 +138,9 @@
     @include respond-to(laptop-small) {
         margin-right: 150px;
         margin-left: 150px;
+    }
+    @include respond-to(mobile-small) {
+        margin: 0px 15px !important ;
     }
     
     

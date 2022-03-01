@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useLayoutEffect } from "react";
 import "./Cart_popup.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { BsFillCartFill } from "react-icons/bs";
@@ -8,28 +8,25 @@ import { useNavigate } from "react-router-dom";
 
 const Cart_popup = ({className}) => {
   const navigate = useNavigate();
-  const [totalprice, settotalprice] = useState(0);
-  const { product : cart_product, quantity } = useSelector(state => state.cartReducer);
+  const { product : cart_product, quantity , total  } = useSelector(state => state.cartReducer);
   console.log(cart_product);
   const dispatch = useDispatch();
-  // const  quantity  = useSelector((state) => state.quantity);
-  // console.log(quantity);
-  
+  const [totalprice, settotalprice] = useState(total);
   const [popup_cart, setpopup_cart] = useState(cart_product);
+  
   const Add_cart = (item, index, operation) => {
     popup_cart[index].count = item.count
       ? operation === "Inc"
         ? item.count + 1
         : item.count - 1
-      : 0;
+      : 0 ;
     setpopup_cart([...popup_cart]);
   };
 
   useEffect(() => {
     let price = 0;
     cart_product.forEach((item) => {
-      price += item.count * item.price;
-
+      price += item.count * item.prices
       return item;
     });
 
@@ -82,19 +79,19 @@ const Cart_popup = ({className}) => {
                             <button>-</button>
                           </span>
                           <span className="product_rate_change">
-                            {item.count}
+                            {!item.count ? dispatch(isNumberDec(item, item.id)) : item.count}
                           </span>
                           <span
                             className="product_rate_plus"
                             onClick={() => Add_cart(item, index, "Inc")}
                           >
-                            <button>+</button>
+                            <button>+</button> 
                           </span>
                           <span className="product_rate_Multiply">*</span>
-                          <span className="product_rupess">{item.price}</span>
+                          <span className="product_rupess">{item.prices}</span>
                         </div>
                         <div className="Product_rupees">
-                          <p>{item.price * item.count}</p>
+                          <p>{item.prices * item.count }</p>
                         </div>
                       </div>
                       <hr className="border_line"></hr>
